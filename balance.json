@@ -1,0 +1,84 @@
+{
+  "Wealth & Wealth Statistics": [
+    {
+      "name": "UBS Global Wealth Report",
+      "url": "https://www.ubs.com/global/en/media/display-page-ndp/en-20250618-gwr-2025.html"
+    },
+    {
+      "name": "World Inequality Database",
+      "url": "https://wid.world/"
+    },
+    {
+      "name": "World Inequality Report",
+      "url": "https://wir2026.wid.world/"
+    },
+    {
+      "name": "World Bank Poverty & Inequality Platform",
+      "url": "https://pip.worldbank.org/"
+    },
+    {
+      "name": "World Bank Data",
+      "url": "https://data.worldbank.org/"
+    },
+    {
+      "name": "OECD Income Distribution Database",
+      "url": "https://www.oecd.org/en/data/datasets/income-distribution-database.html"
+    },
+    {
+      "name": "OECD Data Explorer",
+      "url": "https://data-explorer.oecd.org/"
+    },
+    {
+      "name": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/"
+    },
+    {
+      "name": "Eurostat Data Browser",
+      "url": "https://ec.europa.eu/eurostat/databrowser/"
+    },
+    {
+      "name": "Luxembourg Wealth Study",
+      "url": "https://www.lisdatacenter.org/our-data/lws-database/"
+    },
+    {
+      "name": "Federal Reserve Distributional Financial Accounts",
+      "url": "https://www.federalreserve.gov/releases/dfa/"
+    },
+    {
+      "name": "Federal Reserve Survey of Consumer Finances",
+      "url": "https://www.federalreserve.gov/econres/scfindex.htm"
+    },
+    {
+      "name": "U.S. Census Bureau Income & Poverty",
+      "url": "https://www.census.gov/topics/income-poverty.html"
+    },
+    {
+      "name": "U.S. IRS Statistics of Income",
+      "url": "https://www.irs.gov/statistics"
+    },
+    {
+      "name": "Forbes Billionaires",
+      "url": "https://www.forbes.com/billionaires/"
+    },
+    {
+      "name": "Forbes Real-Time Billionaires",
+      "url": "https://www.forbes.com/real-time-billionaires/"
+    },
+    {
+      "name": "Bloomberg Billionaires Index",
+      "url": "https://www.bloomberg.com/billionaires/"
+    },
+    {
+      "name": "Knight Frank Wealth Report",
+      "url": "https://www.knightfrank.com/research/the-wealth-report"
+    },
+    {
+      "name": "Henley & Partners Wealth Migration",
+      "url": "https://www.henleyglobal.com/publications/henley-private-wealth-migration-report"
+    },
+    {
+      "name": "World Wealth & Income Database",
+      "url": "https://wid.world/"
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "Global Public Registries": [
+    {
+      "name": "OCCRP ID",
+      "url": "https://id.occrp.org/"
+    },
+    {
+      "name": "OCCRP Database Catalogue",
+      "url": "https://id.occrp.org/databases/"
+    },
+    {
+      "name": "UNECE GRID",
+      "url": "https://grid.unece.org/"
+    },
+    {
+      "name": "Dateno",
+      "url": "https://dateno.io/"
+    }
+  ],
+
+  "Internet & Domains": [
+    {
+      "name": "ICANN Lookup",
+      "url": "https://lookup.icann.org/"
+    },
+    {
+      "name": "IANA Root Zone Database",
+      "url": "https://www.iana.org/domains/root/db"
+    },
+    {
+      "name": "IANA",
+      "url": "https://www.iana.org/"
+    },
+    {
+      "name": "crt.sh",
+      "url": "https://crt.sh/"
+    },
+    {
+      "name": "Common Crawl",
+      "url": "https://commoncrawl.org/"
+    },
+    {
+      "name": "Internet Archive",
+      "url": "https://web.archive.org/"
+    },
+    {
+      "name": "Open Domain Data",
+      "url": "https://www.opendomaindata.org/"
+    }
+  ],
+
+  "Companies & Corporate Registries": [
+    {
+      "name": "OpenCorporates",
+      "url": "https://opencorporates.com/"
+    },
+    {
+      "name": "GLEIF",
+      "url": "https://search.gleif.org/"
+    },
+    {
+      "name": "Open Ownership",
+      "url": "https://www.openownership.org/"
+    },
+    {
+      "name": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+      "name": "SEC EDGAR",
+      "url": "https://www.sec.gov/edgar/search/"
+    }
+  ],
+
+  "Finance & Markets": [
+    {
+      "name": "SEC EDGAR",
+      "url": "https://www.sec.gov/edgar/search/"
+    },
+    {
+      "name": "FINRA Data",
+      "url": "https://www.finra.org/finra-data"
+    },
+    {
+      "name": "Nasdaq",
+      "url": "https://www.nasdaq.com/"
+    },
+    {
+      "name": "NYSE",
+      "url": "https://www.nyse.com/"
+    },
+    {
+      "name": "London Stock Exchange",
+      "url": "https://www.londonstockexchange.com/"
+    },
+    {
+      "name": "Euronext",
+      "url": "https://www.euronext.com/"
+    },
+    {
+      "name": "Deutsche Börse",
+      "url": "https://www.deutsche-boerse.com/"
+    },
+    {
+      "name": "Tokyo Stock Exchange",
+      "url": "https://www.jpx.co.jp/english/"
+    },
+    {
+      "name": "Hong Kong Exchanges",
+      "url": "https://www.hkex.com.hk/"
+    }
+  ],
+
+  "Cryptocurrency & Blockchain": [
+    {
+      "name": "Mempool.space",
+      "url": "https://mempool.space/"
+    },
+    {
+      "name": "Etherscan",
+      "url": "https://etherscan.io/"
+    },
+    {
+      "name": "Blockchair",
+      "url": "https://blockchair.com/"
+    },
+    {
+      "name": "Blockchain.com Explorer",
+      "url": "https://www.blockchain.com/explorer"
+    },
+    {
+      "name": "Whale Alert",
+      "url": "https://whale-alert.io/"
+    },
+    {
+      "name": "Arkham Intelligence",
+      "url": "https://platform.arkhamintelligence.com/"
+    }
+  ],
+
+  "Internet Infrastructure & BGP": [
+    {
+      "name": "RIPEstat",
+      "url": "https://stat.ripe.net/"
+    },
+    {
+      "name": "RIPE RIS",
+      "url": "https://ris.ripe.net/"
+    },
+    {
+      "name": "RouteViews",
+      "url": "https://www.routeviews.org/"
+    },
+    {
+      "name": "BGP.tools",
+      "url": "https://bgp.tools/"
+    },
+    {
+      "name": "ARIN",
+      "url": "https://www.arin.net/"
+    },
+    {
+      "name": "RIPE NCC",
+      "url": "https://www.ripe.net/"
+    },
+    {
+      "name": "APNIC",
+      "url": "https://www.apnic.net/"
+    },
+    {
+      "name": "LACNIC",
+      "url": "https://www.lacnic.net/"
+    },
+    {
+      "name": "AFRINIC",
+      "url": "https://www.afrinic.net/"
+    }
+  ],
+
+  "Aircraft & Aviation": [
+    {
+      "name": "OpenSky Network",
+      "url": "https://opensky-network.org/"
+    },
+    {
+      "name": "ADS-B Exchange",
+      "url": "https://www.adsbexchange.com/"
+    },
+    {
+      "name": "FAA Aircraft Registry",
+      "url": "https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry"
+    },
+    {
+      "name": "ICAO",
+      "url": "https://www.icao.int/"
+    }
+  ],
+
+  "Ships & Maritime": [
+    {
+      "name": "Equasis",
+      "url": "https://www.equasis.org/"
+    },
+    {
+      "name": "IMO",
+      "url": "https://www.imo.org/"
+    },
+    {
+      "name": "MarineTraffic",
+      "url": "https://www.marinetraffic.com/"
+    },
+    {
+      "name": "VesselFinder",
+      "url": "https://www.vesselfinder.com/"
+    }
+  ],
+
+  "Land & Geography": [
+    {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/"
+    },
+    {
+      "name": "OpenLandMap",
+      "url": "https://openlandmap.org/"
+    },
+    {
+      "name": "FAO Land & Water",
+      "url": "https://www.fao.org/land-water/"
+    },
+    {
+      "name": "World Bank Land",
+      "url": "https://www.worldbank.org/en/topic/land"
+    }
+  ],
+
+  "Global Statistics & Population": [
+    {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org/"
+    },
+    {
+      "name": "UN Data",
+      "url": "https://data.un.org/"
+    },
+    {
+      "name": "UN Population Division",
+      "url": "https://population.un.org/"
+    },
+    {
+      "name": "Our World in Data",
+      "url": "https://ourworldindata.org/"
+    },
+    {
+      "name": "ITU DataHub",
+      "url": "https://datahub.itu.int/"
+    },
+    {
+      "name": "OECD Data Explorer",
+      "url": "https://data-explorer.oecd.org/"
+    }
+  ],
+
+  "Government & Public Spending": [
+    {
+      "name": "Data.gov",
+      "url": "https://data.gov/"
+    },
+    {
+      "name": "European Data Portal",
+      "url": "https://data.europa.eu/"
+    },
+    {
+      "name": "TED",
+      "url": "https://ted.europa.eu/"
+    },
+    {
+      "name": "USASpending",
+      "url": "https://www.usaspending.gov/"
+    },
+    {
+      "name": "World Bank Procurement",
+      "url": "https://www.worldbank.org/en/projects-operations/procurement"
+    }
+  ],
+
+  "Science & Earth Observation": [
+    {
+      "name": "NASA Earthdata",
+      "url": "https://earthdata.nasa.gov/"
+    },
+    {
+      "name": "USGS Data",
+      "url": "https://www.usgs.gov/products/data"
+    },
+    {
+      "name": "NOAA Data",
+      "url": "https://www.ncei.noaa.gov/"
+    },
+    {
+      "name": "Copernicus Data Space",
+      "url": "https://dataspace.copernicus.eu/"
+    },
+    {
+      "name": "GBIF",
+      "url": "https://www.gbif.org/"
+    },
+    {
+      "name": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/"
+    }
+  ]
+}
