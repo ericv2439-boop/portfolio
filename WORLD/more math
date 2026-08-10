@@ -1,0 +1,499 @@
+Mathematical Stack of the NEXUS Architecture
+I. Foundations — what makes a mathematical program meaningful
+Mathematical logic
+Propositions
+Predicates
+Quantifiers
+Logical implication
+Equivalence
+Proof rules
+Constraint satisfaction
+Set theory
+Sets
+Relations
+Functions
+Cartesian products
+Subsets
+Partitions
+Equivalence relations
+Formal languages
+Grammars
+Syntax
+Expressions
+Parse trees
+Abstract syntax trees
+Formal semantics
+Term rewriting
+Type theory
+Mathematical types
+Domains/codomains
+Type checking
+Dependent constraints
+Typed expressions
+II. Algebra — the language of transformations
+Elementary algebra
+Equations
+Inequalities
+Variables
+Substitution
+Elimination
+Factorization
+Linear algebra
+Vectors
+Matrices
+Linear transformations
+Eigenvalues/eigenvectors
+Vector spaces
+Inner products
+Projections
+Matrix decompositions
+Abstract algebra
+Groups
+Rings
+Fields
+Homomorphisms
+Isomorphisms
+Quotient structures
+Boolean algebra
+Logical operators
+Boolean functions
+State conditions
+Decision structures
+Polynomial algebra
+Polynomial systems
+Roots
+Factorization
+Polynomial identities
+III. Analysis — understanding continuous change
+Real analysis
+Limits
+Continuity
+Convergence
+Sequences
+Series
+Bounds
+Differential calculus
+Derivatives
+Partial derivatives
+Gradients
+Jacobians
+Hessians
+Directional derivatives
+Higher derivatives
+Integral calculus
+Definite integrals
+Indefinite integrals
+Multiple integrals
+Line integrals
+Surface integrals
+Multivariable calculus
+Vector fields
+Divergence
+Curl
+Gradient fields
+Coordinate transformations
+Vector calculus
+Differential equations
+Ordinary differential equations
+Partial differential equations
+Initial-value problems
+Boundary-value problems
+Dynamical equations
+Calculus of variations
+Functionals
+Euler–Lagrange equations
+Optimal trajectories
+Variational optimization
+Real-valued optimization
+Local extrema
+Global extrema
+Convexity
+Stationary points
+Saddle points
+IV. Geometry
+Euclidean geometry
+Analytic geometry
+Coordinate geometry
+Vector geometry
+Differential geometry
+Manifolds
+Tangent spaces
+Curvature
+Metrics
+Geodesics
+Riemannian geometry
+Geometric transformations
+Translation
+Rotation
+Scaling
+Reflection
+Projection
+Computational geometry
+V. Topology
+General topology
+Open/closed sets
+Neighborhoods
+Continuity
+Connectedness
+Compactness
+Algebraic topology
+Homotopy
+Homology
+Cohomology
+Fundamental groups
+Simplicial complexes
+Chain complexes
+Exact sequences
+Topological invariants
+Persistent homology
+Topological data analysis
+Filtrations
+Persistence diagrams
+Persistence landscapes
+Mapper
+Shape analysis
+Combinatorial topology
+
+This layer gives the system a way to recognize structural similarity despite numerical differences.
+
+VI. Probability and uncertainty
+Probability theory
+Random variables
+Probability distributions
+Conditional probability
+Expectation
+Variance
+Covariance
+Bayesian mathematics
+Priors
+Likelihoods
+Posteriors
+Bayesian updating
+Stochastic processes
+Markov processes
+Markov chains
+Random walks
+Brownian motion
+Time-series processes
+Stochastic calculus
+Itô calculus
+Stochastic differential equations
+Uncertainty quantification
+VII. Statistics and inference
+Descriptive statistics
+Inferential statistics
+Regression
+Linear regression
+Nonlinear regression
+Robust regression
+Correlation analysis
+Covariance analysis
+Hypothesis testing
+Time-series analysis
+Autocorrelation
+Cross-correlation
+Seasonality
+Trend
+Stationarity
+Change-point detection
+Causal inference
+Experimental design
+VIII. Signal and pattern mathematics
+Fourier analysis
+Fourier transforms
+Laplace transforms
+Wavelet analysis
+Frequency-domain analysis
+Spectral analysis
+Autocorrelation
+Cross-correlation
+Convolution
+Filtering
+Periodicity detection
+Harmonic analysis
+
+These provide the mathematical machinery for questions like:
+
+"Does something happen every 2 seconds?"
+
+or:
+
+"Does this signal contain a periodic component?"
+IX. Dynamical systems
+Dynamical systems
+State-space models
+Discrete dynamical systems
+x
+t+1
+	​
+
+=f(x
+t
+	​
+
+)
+Continuous dynamical systems
+x
+˙
+=f(x,t)
+Phase spaces
+Trajectories
+Fixed points
+Attractors
+Repellers
+Stability theory
+Lyapunov stability
+Bifurcation theory
+Chaos theory
+Ergodic theory
+Recurrence analysis
+
+This is particularly important for your idea of a system evolving through discrete states.
+
+X. Optimization
+Mathematical optimization
+Constrained optimization
+Unconstrained optimization
+Convex optimization
+Nonlinear optimization
+Global optimization
+Multi-objective optimization
+Combinatorial optimization
+Integer programming
+Linear programming
+Quadratic programming
+Gradient methods
+Newton methods
+Lagrange multipliers
+KKT conditions
+Dynamic programming
+Optimal control
+XI. Information and complexity
+Information theory
+Entropy
+Mutual information
+Conditional entropy
+Information gain
+Algorithmic information theory
+Kolmogorov complexity
+Minimum description length
+Compression
+Complexity measures
+
+These become important when deciding between:
+
+P
+1
+	​
+
+=simple equation
+
+and:
+
+P
+2
+	​
+
+=enormous equation that perfectly memorizes the data.
+XII. Graph and network mathematics
+Graph theory
+Directed graphs
+Weighted graphs
+Graph traversal
+Shortest paths
+Connectivity
+Centrality
+Network flows
+Graph dynamics
+Graph neural structures
+Hypergraphs
+Simplicial complexes
+
+This connects naturally with the topology layer.
+
+XIII. Discrete mathematics
+Combinatorics
+Discrete structures
+Finite-state systems
+Cellular automata
+Recurrence relations
+Discrete calculus
+Number theory
+Discrete probability
+
+This is especially relevant because your system isn't restricted to continuous mathematics.
+
+XIV. Formal computational mathematics
+Symbolic computation
+Computer algebra
+Term rewriting
+Symbolic differentiation
+Symbolic integration
+Equation solving
+Constraint solving
+Automated theorem proving
+Formal verification
+Proof systems
+SMT/SAT reasoning
+
+This is the layer that can determine whether a generated mathematical program is actually valid.
+
+XV. Program synthesis mathematics
+Search spaces
+Program transformation
+Grammar-based synthesis
+Symbolic regression
+Genetic programming
+Evolutionary algorithms
+Program mutation
+Program crossover
+Program complexity
+Meta-optimization
+Algorithm selection
+Algorithmic search
+
+This is where your "lists become calls which define the next script" concept lives mathematically.
+
+XVI. Control theory
+Control theory
+Feedback systems
+State feedback
+Optimal control
+Model predictive control
+Robust control
+Adaptive control
+System identification
+Observability
+Controllability
+Stability
+
+This becomes critical once the mathematical program doesn't merely analyze the environment but acts upon it.
+
+XVII. Game and decision mathematics
+Decision theory
+Utility functions
+Expected utility
+Game theory
+Repeated games
+Mechanism design
+Multi-agent systems
+Strategic optimization
+Equilibrium theory
+
+This becomes relevant if multiple agents interact with the same environment.
+
+XVIII. Learning theory
+Statistical learning theory
+Generalization theory
+Bias–variance tradeoff
+Regularization
+Online learning
+Active learning
+Meta-learning
+Reinforcement learning
+Exploration/exploitation
+Model-based learning
+Continual learning
+XIX. Categorical / structural mathematics
+
+At the more advanced end of the architecture:
+
+Category theory
+Objects and morphisms
+Functors
+Natural transformations
+Commutative diagrams
+Universal constructions
+Monoidal structures
+Functorial composition
+
+This could become surprisingly relevant to your architecture because your entire system revolves around transformations between mathematical objects.
+
+You could eventually represent:
+
+X
+f
+	​
+
+Y
+g
+	​
+
+Z
+
+and reason about:
+
+g∘f.
+
+That is almost exactly the conceptual structure of your program lists.
+
+XX. Physics-inspired mathematical structures
+
+If the system eventually models physical environments:
+
+Classical mechanics
+Lagrangian mechanics
+Hamiltonian mechanics
+Conservation laws
+Symmetry
+Noether's theorem
+Statistical mechanics
+Thermodynamics
+Field theory
+Continuum mechanics
+Fluid dynamics
+Electromagnetism
+
+These aren't necessary for the general compiler, but they become domain-specific mathematical vocabularies.
+
+XXI. The hierarchy I'd actually implement
+
+I wouldn't implement all ~190 concepts simultaneously.
+
+I'd build the mathematical kernel roughly like this:
+
+Logic
+↓
+Sets + Functions
+↓
+Algebra
+↓
+Linear Algebra
+↓
+Calculus
+↓
+Differential Equations
+↓
+Dynamical Systems
+↓
+Topology
+↓
+Algebraic Topology
+↓
+Probability + Statistics
+↓
+Information Theory
+↓
+Optimization
+↓
+Program Synthesis
+↓
+Control
+	​
+
+	​
+
+
+with geometry, graph theory, signal processing, category theory, and domain-specific mathematics branching horizontally.
+
+The resulting idea is considerably larger than "an AI that solves equations."
+
+It is closer to:
+
+a computational mathematical universe in which programs are mathematical objects.
+	​
+
+
+The agent observes a state space, constructs mathematical representations of it, searches a space of possible transformations, verifies those transformations against mathematical invariants, optimizes them against objectives, compiles the surviving structure into executable procedures, and feeds the consequences back into the next generation.
+
+That is the coherent mathematical foundation I would use for the system you've been describing.
