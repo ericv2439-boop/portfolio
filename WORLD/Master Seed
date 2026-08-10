@@ -1,0 +1,1397 @@
+WORLD // NEXUS — MASTER SYSTEM-BUILD PROMPT
+
+
+You are the principal architect and implementation engineer for WORLD // NEXUS, a planetary-scale spatiotemporal knowledge engine.
+
+
+Your task is to design and implement a production-grade prototype of WORLD // NEXUS from the specification below.
+
+
+Do not treat this as a conventional dashboard, GIS viewer, database, or financial terminal.
+
+
+1. CORE PURPOSE
+
+
+WORLD // NEXUS represents states of knowledge about the world.
+
+
+It must model real-world and digital entities, their relationships, states, events, locations, values, legal structures, ecological systems, infrastructure, networks, provenance, temporal history, and epistemic uncertainty.
+
+
+The renderer is never the source of truth.
+
+
+The canonical architecture is:
+
+
+WORLD STATE
+(E, R, S, T, P, Γ)
+        │
+        ↓
+QUERY / PROJECTION CONTEXT Q
+        │
+        ↓
+PROJECTION ENGINE
+        │
+ ┌──────┼────────┐
+ ↓      ↓        ↓
+WEBGL   API      TERMINAL
+
+
+
+The same underlying state must be capable of being projected into a 3D globe, 2D maps, APIs, analytical interfaces, reports, and machine-readable outputs without modifying the underlying state.
+
+
+
+2. GOVERNING MODEL
+
+
+Model the system using:
+
+
+E = Entities
+R = Relationships
+S = Spatial State
+T = Temporal State
+P = Provenance
+Q = Query / Projection Context
+Γ = Epistemic State
+
+
+
+The implementation must preserve these concerns as distinct concepts.
+
+
+Do not collapse them into a single database record or visualization object.
+
+
+
+3. UNIVERSAL ENTITY ONTOLOGY
+
+
+WORLD // NEXUS must support a universal entity model.
+
+
+At minimum implement:
+
+
+PERSON
+ORGANIZATION
+  COMPANY
+  GOVERNMENT
+  INSTITUTION
+  NGO
+  FINANCIAL_ENTITY
+
+JURISDICTION
+  COUNTRY
+  REGION
+  MUNICIPALITY
+  DISTRICT
+  TERRITORY
+
+PROPERTY
+  LAND
+  BUILDING
+  RESIDENTIAL
+  COMMERCIAL
+  INDUSTRIAL
+  AGRICULTURAL
+
+OBJECT
+  DEVICE
+  VEHICLE
+  MACHINE
+  EQUIPMENT
+  CONSUMER_GOOD
+  COLLECTIBLE
+
+RESOURCE
+  WATER
+  METAL
+  MINERAL
+  FOOD
+  TIMBER
+  OIL
+  GAS
+  RAW_MATERIAL
+
+ENERGY
+  ELECTRICITY
+  SOLAR
+  WIND
+  HYDRO
+  GEOTHERMAL
+  NUCLEAR
+  FUEL
+
+INFRASTRUCTURE
+  POWER
+  WATER
+  ROAD
+  RAIL
+  PORT
+  AIRPORT
+  PIPELINE
+  TELECOMMUNICATIONS
+  DATA_CENTER
+
+DIGITAL_ASSET
+  DOMAIN
+  IP_NETWORK
+  SOFTWARE
+  DATASET
+  COMPUTE_RESOURCE
+  DIGITAL_TOKEN
+
+FINANCIAL_ASSET
+  CURRENCY
+  EQUITY
+  BOND
+  FUND
+  COMMODITY
+  CRYPTOASSET
+
+BIOSPHERE
+  ECOSYSTEM
+  BIOME
+  WATERSHED
+  HABITAT
+  SPECIES
+  POPULATION
+  AGRICULTURAL_STOCK
+
+LEGAL_ASSET
+  CONTRACT
+  TREATY
+  LAW
+  REGULATION
+  COURT_RULING
+  LICENSE
+
+INTELLECTUAL_ASSET
+  PATENT
+  TRADEMARK
+  COPYRIGHT
+  SOFTWARE_LICENSE
+  DIGITAL_RIGHT
+
+
+
+The ontology must be extensible.
+
+
+Do not hard-code the entire system around these initial categories.
+
+
+
+4. RELATIONSHIP GRAPH
+
+
+Relationships are first-class objects.
+
+
+Every relationship must contain:
+
+
+relationship_id
+subject_entity
+relationship_type
+object_entity
+valid_from
+valid_to
+observed_at
+provenance
+confidence
+status
+
+
+
+Support at minimum:
+
+
+Family / civil
+
+
+parent_of
+child_of
+sibling_of
+grandparent_of
+grandchild_of
+aunt_uncle_of
+niece_nephew_of
+cousin_of
+spouse_of
+civil_partner_of
+former_spouse_of
+guardian_of
+dependent_of
+
+
+
+Ownership / possession
+
+
+owns
+possesses
+leases
+rents
+occupies
+manages
+controls
+has_access_to
+borrows
+stores
+
+
+
+Ownership must never automatically imply possession.
+
+
+Possession must never automatically imply ownership.
+
+
+Control must never automatically imply ownership.
+
+
+Economic
+
+
+employs
+invests_in
+finances
+supplies
+purchases
+sells_to
+produces
+consumes
+
+
+
+Organizational
+
+
+subsidiary_of
+parent_of
+member_of
+operates
+manages
+regulates
+governed_by
+
+
+
+Physical
+
+
+located_in
+contains
+adjacent_to
+connected_to
+transports
+depends_on
+
+
+
+Legal
+
+
+bound_by
+licensed_to
+grants_right_to
+litigates
+violates
+regulated_by
+established_by
+
+
+
+Ecological
+
+
+inhabits
+depends_on
+preys_on
+pollinates
+competes_with
+affects
+pollutes
+
+
+
+Network
+
+
+routes_to
+peers_with
+resolves_to
+broadcasts_to
+transmits_over
+connected_to
+
+
+
+Relationships must be temporal and evidentiary.
+
+
+Never infer sensitive relationships merely because two entities appear correlated.
+
+
+
+5. PERSON / CIVIL MODEL
+
+
+Support civil-state information as legally applicable:
+
+
+marital_status
+civil_partnership
+guardianship
+dependency
+residency_status
+registration_state
+
+
+
+Family relationships must be represented as explicit graph edges with provenance.
+
+
+Do not infer biological or legal relationships from names, addresses, photographs, social connections, or statistical similarity.
+
+
+Sensitive personal information must support access controls and restricted states.
+
+
+
+6. UNIVERSAL STATE MODEL
+
+
+Every entity can have multiple independent state dimensions.
+
+
+Physical state
+
+
+location
+geometry
+dimensions
+mass
+composition
+condition
+operational_state
+
+
+
+Resource state
+
+
+quantity
+quality
+reserves
+accessibility
+availability
+
+
+
+Capacity state
+
+
+production
+generation
+storage
+processing
+transportation
+computation
+
+
+
+Economic state
+
+
+market_value
+assessed_value
+replacement_cost
+rental_value
+revenue
+cost
+liquidity
+
+
+
+Legal state
+
+
+title
+ownership
+lease
+lien
+permit
+license
+zoning
+restriction
+
+
+
+Civil state
+
+
+marital_status
+civil_partnership
+guardianship
+residency
+registration
+
+
+
+Ecological state
+
+
+population
+health
+habitat
+biodiversity
+water_quality
+air_quality
+emissions
+environmental_stress
+
+
+
+Network state
+
+
+connectivity
+routing
+bandwidth
+latency
+availability
+topology
+
+
+
+Do not overwrite historical states.
+
+
+
+7. VALUE MODEL
+
+
+The system must not equate value exclusively with money.
+
+
+Represent multiple value dimensions:
+
+
+MONETARY_VALUE
+MARKET_VALUE
+ASSESSED_VALUE
+REPLACEMENT_VALUE
+RENTAL_VALUE
+RESOURCE_VALUE
+PRODUCTIVE_VALUE
+UTILITY_VALUE
+ECOLOGICAL_VALUE
+SCARCITY
+SUPPLY
+DEMAND
+LIQUIDITY
+
+
+
+A property, for example, can simultaneously have:
+
+
+physical_value
+resource_value
+productive_value
+economic_value
+ecological_value
+legal_value
+utility_value
+
+
+
+Values are observations or estimates, not intrinsic truths.
+
+
+Every valuation must have timestamp, source, methodology, units, and confidence.
+
+
+
+8. EVENT MODEL
+
+
+Events are first-class temporal objects.
+
+
+Support:
+
+
+birth
+death
+marriage
+divorce
+acquisition
+sale
+transfer
+inheritance
+production
+consumption
+construction
+destruction
+maintenance
+relocation
+registration
+contract_execution
+legal_action
+regulatory_change
+ecological_change
+network_event
+valuation
+
+
+
+Events must connect:
+
+
+subject
+actor
+object
+location
+time
+state_change
+provenance
+
+
+
+
+9. BI-TEMPORAL ARCHITECTURE
+
+
+Every assertion must support:
+
+
+VALID_TIME
+OBSERVATION_TIME
+
+
+
+Use:
+
+
+valid_from
+valid_to
+observed_at
+
+
+
+This allows queries such as:
+
+
+
+
+What did NEXUS believe on date X about the state that was valid on date Y?
+
+
+
+
+Historical observations must remain immutable.
+
+
+Corrections create new versions rather than silently rewriting history.
+
+
+
+10. EPISTEMIC MODEL
+
+
+Every assertion must have one of:
+
+
+KNOWN
+INFERRED
+ESTIMATED
+CONFLICTED
+UNKNOWN
+RESTRICTED
+
+
+
+Critical rule:
+
+
+UNKNOWN ≠ ZERO
+UNKNOWN ≠ FALSE
+UNKNOWN ≠ ABSENT
+
+
+
+Contradictions must be preserved.
+
+
+Never silently choose one conflicting source.
+
+
+
+11. CONFIDENCE VECTOR
+
+
+Represent confidence as seven independent dimensions:
+
+
+source_reliability
+measurement_quality
+temporal_freshness
+cross_source_agreement
+methodological_confidence
+spatial_accuracy
+completeness
+
+
+
+Do not reduce these dimensions into a single confidence number unless a user explicitly requests an aggregate score.
+
+
+Preserve the original vector.
+
+
+
+12. PROVENANCE SYSTEM
+
+
+Every important assertion must trace back to evidence.
+
+
+Support:
+
+
+SOURCE
+DOCUMENT
+REGISTRY
+OBSERVATION
+DERIVATION
+TRANSFORMATION
+VERIFICATION
+
+
+
+The provenance graph should allow:
+
+
+SCREEN PIXEL
+    ↓
+AGGREGATED CELL
+    ↓
+ENTITY
+    ↓
+STATE
+    ↓
+ASSERTION
+    ↓
+DERIVATION
+    ↓
+SOURCE
+    ↓
+ORIGINAL DOCUMENT / RECORD
+
+
+
+
+13. CRYPTOGRAPHIC VERIFICATION
+
+
+Support cryptographic verification primitives without claiming that cryptography proves the truth of an underlying real-world statement.
+
+
+Implement references for:
+
+
+CONTENT_HASH
+SHA256
+DIGITAL_SIGNATURE
+MERKLE_PROOF
+STATE_ROOT
+ZKP_REFERENCE
+LEDGER_ANCHOR
+BLOCK_HEIGHT
+TRANSACTION_HASH
+TIMESTAMP_RECEIPT
+
+
+
+Cryptography establishes properties such as integrity, authorship, inclusion, or timestamp evidence.
+
+
+It does not automatically establish that an external physical-world claim is true.
+
+
+Keep:
+
+
+cryptographic_verification
+
+
+
+separate from:
+
+
+epistemic_truth
+
+
+
+
+14. SPATIAL MODEL
+
+
+Use a hierarchical spatial representation.
+
+
+Support:
+
+
+latitude
+longitude
+altitude
+geometry
+boundary
+H3_index
+administrative_region
+network_position
+
+
+
+Use H3 or an equivalent hierarchical spatial index for aggregation.
+
+
+Never render millions of raw entities unnecessarily.
+
+
+Use:
+
+
+aggregation
+LOD
+spatial tiling
+caching
+progressive refinement
+
+
+
+
+15. QUERY / PROJECTION CONTEXT Q
+
+
+Q is not ordinary world-state data.
+
+
+It represents the current requested projection.
+
+
+Support:
+
+
+camera_position
+camera_frustum
+bounding_box
+center
+radius
+
+H3_resolution
+aggregation_level
+detail_threshold
+
+valid_time_range
+observation_time_range
+
+active_layers
+suppressed_layers
+filters
+
+access_scope
+confidence_threshold
+epistemic_filter
+
+
+
+The projection engine must determine what data is appropriate to display based on Q.
+
+
+
+16. VISUALIZATION
+
+
+Create a professional planetary observatory interface.
+
+
+Primary view:
+
+
+3D EARTH
+
+
+
+with:
+
+
+atmospheric scattering
+day/night cycle
+city-light visualization
+H3 spatial fields
+network flows
+resource fields
+infrastructure
+transportation
+economic layers
+ecological layers
+
+
+
+Available layers should include:
+
+
+POPULATION
+ECONOMY
+RESOURCES
+ENERGY
+WATER
+FOOD
+INDUSTRY
+INFRASTRUCTURE
+INTERNET
+AIR_TRAFFIC
+MARITIME
+FINANCE
+BLOCKCHAIN
+COMPANIES
+GOVERNMENT
+PROPERTY
+BIOSPHERE
+ENVIRONMENT
+
+
+
+The UI should feel like a sophisticated scientific/cyberpunk world-state terminal rather than a conventional map.
+
+
+
+17. KNOWLEDGE INSPECTOR
+
+
+Selecting an entity opens a Knowledge Inspector.
+
+
+Display:
+
+
+ENTITY ID
+ENTITY TYPE
+CURRENT STATE
+SPATIAL POSITION
+TEMPORAL STATE
+RELATIONSHIPS
+VALUE STATE
+CONFIDENCE VECTOR
+EPISTEMIC CLASSIFICATION
+PROVENANCE
+CRYPTOGRAPHIC VERIFICATION
+HISTORICAL VERSIONS
+
+
+
+The inspector must allow the user to trace:
+
+
+aggregate
+→ entity
+→ relationship
+→ assertion
+→ evidence
+→ source
+
+
+
+
+18. TEMPORAL NAVIGATION
+
+
+Implement a timeline.
+
+
+The user must be able to:
+
+
+move backward
+move forward
+select an observation time
+select a valid time
+compare historical states
+
+
+
+The visualization must update without destroying historical records.
+
+
+
+19. DATA INGESTION
+
+
+Design an ingestion architecture based on:
+
+
+SOURCE
+ ↓
+CONNECTOR
+ ↓
+RAW RECORD
+ ↓
+NORMALIZATION
+ ↓
+ENTITY RESOLUTION
+ ↓
+RELATIONSHIP EXTRACTION
+ ↓
+STATE ASSERTION
+ ↓
+PROVENANCE
+ ↓
+CONFIDENCE
+ ↓
+TEMPORAL VERSIONING
+ ↓
+WORLD-STATE STORE
+
+
+
+Do not allow ingestion code to silently mutate canonical state.
+
+
+Raw source data must remain recoverable.
+
+
+
+20. STORAGE ARCHITECTURE
+
+
+Design the storage layer around specialized stores where appropriate.
+
+
+Potential components:
+
+
+OBJECT STORAGE
+RELATIONAL / BITEMPORAL STORE
+GRAPH STORE
+SPATIAL INDEX
+SEARCH INDEX
+TIME-SERIES STORE
+EVENT STREAM
+CACHE
+VECTOR INDEX
+
+
+
+The World-State API must abstract these stores.
+
+
+Applications must not directly depend on individual storage engines.
+
+
+
+21. API
+
+
+Create a unified API supporting queries such as:
+
+
+GET ENTITY
+GET STATE
+GET RELATIONSHIPS
+GET HISTORY
+GET PROVENANCE
+GET VALUE
+GET SPATIAL_AGGREGATION
+GET ENTITIES_IN_REGION
+GET ENTITIES_AT_TIME
+GET_RELATIONSHIP_PATH
+VERIFY_ASSERTION
+
+
+
+Support spatial, temporal, epistemic, relationship, and entity filters.
+
+
+
+22. SECURITY & ACCESS CONTROL
+
+
+Implement security as a core architectural layer.
+
+
+Support:
+
+
+authentication
+authorization
+role-based access
+attribute-based access
+data classification
+field-level permissions
+audit logging
+rate limiting
+provenance auditing
+
+
+
+Sensitive information must not become publicly accessible merely because it exists in the underlying graph.
+
+
+RESTRICTED is a legitimate state.
+
+
+Do not attempt to bypass access controls, private databases, authentication, or legal restrictions.
+
+
+
+23. PHASE 0 VERTICAL SLICE
+
+
+Do not attempt to populate the entire planet initially.
+
+
+Build a functioning demonstration around:
+
+
+GEOGRAPHY:
+San Francisco sector
+
+TARGET:
+~100 representative entities
+
+
+
+Include examples from:
+
+
+PERSON / ORGANIZATION
+PROPERTY
+VEHICLE
+RESOURCE
+ENERGY
+INFRASTRUCTURE
+COMPANY
+GOVERNMENT
+BIOSPHERE
+INTERNET / NETWORK
+FINANCIAL ASSET
+LEGAL ASSET
+DIGITAL ASSET
+
+
+
+Use legitimate/public or synthetic demonstration data where appropriate.
+
+
+
+24. PHASE 0 ACCEPTANCE TEST
+
+
+The prototype is not complete until this sequence works:
+
+
+1. Launch NEXUS.
+
+2. Render Earth.
+
+3. Display planetary aggregation.
+
+4. Navigate to San Francisco.
+
+5. Increase spatial resolution.
+
+6. Transition from aggregate fields
+   to individual entities.
+
+7. Select an entity.
+
+8. Open Knowledge Inspector.
+
+9. Display its current state.
+
+10. Display relationships.
+
+11. Display bitemporal history.
+
+12. Display confidence vector.
+
+13. Display epistemic classification.
+
+14. Trace provenance.
+
+15. Verify an associated cryptographic integrity record.
+
+16. Move the temporal slider.
+
+17. Observe historical state changes.
+
+18. Change epistemic/confidence filters.
+
+19. Change active layers.
+
+20. Zoom back out.
+
+21. Confirm entities dissolve into
+    spatial aggregation.
+
+22. Confirm the underlying canonical
+    world state has not changed.
+
+
+
+
+25. ENGINEERING REQUIREMENTS
+
+
+Prioritize:
+
+
+correctness
+determinism
+provenance
+immutability
+observability
+extensibility
+scalability
+testability
+security
+performance
+
+
+
+Every important subsystem must have automated tests.
+
+
+Implement schema validation.
+
+
+Implement migration/versioning.
+
+
+Implement structured logging.
+
+
+Implement health checks.
+
+
+Implement reproducible development environments.
+
+
+Document all public APIs.
+
+
+Document all ontology definitions.
+
+
+Document all assumptions.
+
+
+
+26. PERFORMANCE PRINCIPLES
+
+
+The system must be designed for eventual planetary scale.
+
+
+Do not attempt to load the complete global entity graph into the browser.
+
+
+Use:
+
+
+spatial partitioning
+H3 aggregation
+LOD
+progressive loading
+server-side filtering
+caching
+streaming
+incremental updates
+graph traversal limits
+
+
+
+The browser receives only the projection required by Q.
+
+
+
+27. FAILURE BEHAVIOR
+
+
+When information is unavailable:
+
+
+UNKNOWN
+
+
+
+When sources disagree:
+
+
+CONFLICTED
+
+
+
+When information exists but cannot legitimately be exposed:
+
+
+RESTRICTED
+
+
+
+Never fabricate missing data.
+
+
+Never convert absence of evidence into zero.
+
+
+Never silently overwrite conflicting observations.
+
+
+Never present an estimate as a verified fact.
+
+
+
+28. IMPLEMENTATION STRATEGY
+
+
+Build in this order:
+
+
+PHASE A
+Core ontology
+↓
+PHASE B
+Bitemporal state engine
+↓
+PHASE C
+Provenance + epistemic system
+↓
+PHASE D
+Spatial/H3 engine
+↓
+PHASE E
+Relationship graph
+↓
+PHASE F
+Query/projection engine
+↓
+PHASE G
+API
+↓
+PHASE H
+Knowledge Inspector
+↓
+PHASE I
+3D globe
+↓
+PHASE J
+Phase-0 ingestion
+↓
+PHASE K
+Testing + observability
+
+
+
+Do not build a beautiful visualization first and attempt to retrofit the knowledge architecture later.
+
+
+The World-State Engine is primary.
+
+
+
+29. REQUIRED DELIVERABLES
+
+
+Produce:
+
+
+1. System architecture
+2. Domain ontology
+3. Database schemas
+4. Graph schema
+5. Bitemporal model
+6. Provenance model
+7. Confidence model
+8. Cryptographic verification model
+9. Spatial/H3 architecture
+10. Query model
+11. API specification
+12. Ingestion architecture
+13. Access-control architecture
+14. Frontend architecture
+15. 3D visualization architecture
+16. Phase-0 dataset specification
+17. Automated tests
+18. Development environment
+19. Documentation
+20. Working Phase-0 prototype
+
+
+
+If a design decision is ambiguous, document the assumption rather than silently choosing one.
+
+
+If a requested feature cannot be implemented safely, legally, or reliably, explain the limitation and implement the closest legitimate abstraction.
+
+
+
+30. FINAL DESIGN PRINCIPLE
+
+
+WORLD // NEXUS is not:
+
+
+a map
+a database
+a dashboard
+a financial terminal
+a surveillance system
+
+
+
+It is:
+
+
+A TEMPORAL,
+SPATIAL,
+RELATIONAL,
+EVIDENCE-BACKED,
+EPISTEMICALLY-AWARE
+WORLD-STATE ENGINE.
+
+
+
+Its fundamental purpose is to represent:
+
+
+WHAT EXISTS
+WHAT IS CONNECTED
+WHAT STATE IT IS IN
+WHERE IT IS
+WHEN IT WAS TRUE
+WHAT IT IS WORTH
+WHAT CHANGED
+WHAT EVIDENCE SUPPORTS IT
+HOW CERTAIN THAT EVIDENCE IS
+AND WHAT PROJECTION THE USER IS REQUESTING
+
+
+
+Build the system so that the data model remains authoritative, the renderer remains replaceable, history remains recoverable, uncertainty remains explicit, and every important assertion remains traceable to evidence.
+
+
+Do not merely generate mock screens.
+
+
+Produce the actual architecture and implementation required to make the Phase-0 vertical slice function end-to-end.
+
