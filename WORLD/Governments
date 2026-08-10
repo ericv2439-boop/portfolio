@@ -1,0 +1,263 @@
+GOVERNMENT_ENTITY
+│
+├── IDENTITY
+│   ├── government_id
+│   ├── official_name
+│   ├── short_name
+│   ├── government_type
+│   ├── jurisdiction
+│   ├── sovereign_status
+│   ├── establishment_date
+│   ├── dissolution_date
+│   └── parent_government_id
+│
+├── TERRITORY
+│   ├── geographic_boundaries
+│   ├── administrative_regions
+│   ├── municipalities
+│   ├── territorial_waters
+│   ├── exclusive_economic_zone
+│   ├── land_area
+│   ├── population
+│   └── H3_SPATIAL_INDEX
+│
+├── INSTITUTIONS
+│   ├── executive
+│   ├── legislature
+│   ├── judiciary
+│   ├── ministries
+│   ├── agencies
+│   ├── regulators
+│   ├── central_bank
+│   ├── statistical_authorities
+│   └── state_owned_entities
+│
+├── ADMINISTRATION
+│   ├── departments
+│   ├── offices
+│   ├── public_authorities
+│   ├── municipalities
+│   ├── regulatory_domains
+│   ├── administrative_hierarchy
+│   └── jurisdictional_relationships
+│
+├── PUBLIC_FINANCE
+│   ├── annual_budget
+│   ├── revenue
+│   │   ├── taxation
+│   │   ├── customs
+│   │   ├── fees
+│   │   ├── royalties
+│   │   └── other_revenue
+│   ├── expenditure
+│   │   ├── infrastructure
+│   │   ├── healthcare
+│   │   ├── education
+│   │   ├── transport
+│   │   ├── energy
+│   │   └── public_administration
+│   ├── public_debt
+│   ├── reserves
+│   ├── liabilities
+│   ├── subsidies
+│   └── fiscal_balance
+│
+├── PUBLIC_ASSETS
+│   ├── LAND
+│   ├── BUILDINGS
+│   ├── ROADS
+│   ├── RAIL
+│   ├── PORTS
+│   ├── AIRPORTS
+│   ├── POWER_INFRASTRUCTURE
+│   ├── WATER_INFRASTRUCTURE
+│   ├── TELECOM_INFRASTRUCTURE
+│   ├── DATA_CENTERS
+│   ├── VEHICLES
+│   ├── INDUSTRIAL_FACILITIES
+│   └── NATURAL_RESOURCES
+│
+├── NATURAL_RESOURCE_STATE
+│   ├── WATER
+│   │   ├── rivers
+│   │   ├── lakes
+│   │   ├── reservoirs
+│   │   ├── aquifers
+│   │   └── treatment_capacity
+│   ├── ENERGY
+│   │   ├── oil
+│   │   ├── gas
+│   │   ├── coal
+│   │   ├── hydro
+│   │   ├── solar
+│   │   ├── wind
+│   │   └── geothermal
+│   ├── MINERALS
+│   │   ├── iron
+│   │   ├── copper
+│   │   ├── lithium
+│   │   ├── nickel
+│   │   ├── gold
+│   │   └── rare_earths
+│   ├── AGRICULTURE
+│   ├── FORESTS
+│   └── FISHERIES
+│
+├── ENERGY_SYSTEM
+│   ├── generation_capacity
+│   ├── installed_capacity
+│   ├── current_generation
+│   ├── electricity_demand
+│   ├── transmission
+│   ├── distribution
+│   ├── storage
+│   ├── fuel_supply
+│   └── grid_interconnections
+│
+├── FOOD_SYSTEM
+│   ├── agricultural_output
+│   ├── livestock
+│   ├── fisheries
+│   ├── food_processing
+│   ├── food_storage
+│   ├── imports
+│   ├── exports
+│   └── strategic_reserves
+│
+├── INDUSTRY
+│   ├── manufacturing
+│   ├── mining
+│   ├── agriculture
+│   ├── construction
+│   ├── energy
+│   ├── transportation
+│   ├── technology
+│   ├── pharmaceuticals
+│   └── critical_industries
+│
+├── INFRASTRUCTURE
+│   ├── transportation
+│   ├── electricity
+│   ├── water
+│   ├── sanitation
+│   ├── telecommunications
+│   ├── internet
+│   ├── logistics
+│   └── industrial_networks
+│
+├── ECONOMY
+│   ├── GDP
+│   ├── GDP_per_capita
+│   ├── inflation
+│   ├── unemployment
+│   ├── productivity
+│   ├── industrial_output
+│   ├── trade_balance
+│   ├── imports
+│   ├── exports
+│   ├── currency
+│   └── interest_rates
+│
+├── TRADE
+│   ├── trading_partners
+│   ├── import_categories
+│   ├── export_categories
+│   ├── trade_routes
+│   ├── ports
+│   ├── tariffs
+│   └── supply_dependencies
+│
+├── POPULATION
+│   ├── population_total
+│   ├── age_distribution
+│   ├── urbanization
+│   ├── labor_force
+│   ├── migration
+│   ├── household_statistics
+│   └── demographic_trends
+│
+├── PUBLIC_SERVICES
+│   ├── healthcare
+│   ├── education
+│   ├── transportation
+│   ├── utilities
+│   ├── sanitation
+│   ├── social_services
+│   └── emergency_services
+│
+├── LAW_AND_REGULATION
+│   ├── legislation
+│   ├── regulations
+│   ├── permits
+│   ├── licenses
+│   ├── standards
+│   ├── taxation_rules
+│   └── jurisdictional_authority
+│
+├── INTERNATIONAL_RELATIONS
+│   ├── diplomatic_relationships
+│   ├── treaties
+│   ├── international_organizations
+│   ├── trade_agreements
+│   ├── aid_flows
+│   └── cross_border_dependencies
+│
+├── TECHNOLOGY
+│   ├── government_digital_services
+│   ├── public_computing
+│   ├── telecommunications
+│   ├── digital_identity_systems
+│   ├── government_databases
+│   └── cybersecurity_posture
+│
+├── ENVIRONMENT
+│   ├── emissions
+│   ├── air_quality
+│   ├── water_quality
+│   ├── biodiversity
+│   ├── land_use
+│   ├── climate_risk
+│   └── environmental_regulation
+│
+├── RESILIENCE
+│   ├── energy_resilience
+│   ├── food_resilience
+│   ├── water_resilience
+│   ├── infrastructure_resilience
+│   ├── supply_chain_resilience
+│   └── disaster_recovery_capacity
+│
+├── VALUE_STATE
+│   ├── public_asset_value
+│   ├── resource_value
+│   ├── infrastructure_value
+│   ├── productive_capacity
+│   ├── replacement_cost
+│   ├── market_value
+│   ├── economic_output
+│   └── strategic_importance
+│
+└── EPISTEMIC_STATE
+    ├── KNOWN
+    ├── INFERRED
+    ├── ESTIMATED
+    ├── CONFLICTED
+    ├── UNKNOWN
+    └── RESTRICTED
+
+    CONFIDENCE_VECTOR
+    ├── source_reliability
+    ├── measurement_quality
+    ├── temporal_freshness
+    ├── cross_source_agreement
+    ├── methodological_confidence
+    ├── spatial_accuracy
+    └── completeness
+
+    PROVENANCE
+    ├── source
+    ├── observation_timestamp
+    ├── valid_from
+    ├── valid_to
+    ├── transformation_history
+    └── verification_chain
