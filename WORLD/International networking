@@ -1,0 +1,204 @@
+GLOBAL CYBER / NETWORK LAW
+│
+├── INTERNATIONAL TREATIES
+│   ├── Budapest Convention on Cybercrime
+│   │   ├── Illegal access
+│   │   ├── Illegal interception
+│   │   ├── Data interference
+│   │   ├── System interference
+│   │   ├── Computer-related fraud
+│   │   ├── Computer-related forgery
+│   │   ├── Evidence preservation
+│   │   ├── Search/seizure powers
+│   │   ├── Mutual legal assistance
+│   │   ├── Extradition
+│   │   └── 24/7 cooperation points
+│   │
+│   ├── First Additional Protocol
+│   │   └── Racist/xenophobic computer-system offenses
+│   │
+│   ├── Second Additional Protocol
+│   │   ├── Electronic evidence
+│   │   ├── Subscriber information
+│   │   ├── Domain-registration information
+│   │   ├── Emergency cooperation
+│   │   ├── Service-provider cooperation
+│   │   └── Data-protection safeguards
+│   │
+│   └── UN Convention against Cybercrime
+│       ├── Cybercrime cooperation
+│       ├── Electronic evidence
+│       ├── International cooperation
+│       └── Serious ICT-enabled offenses
+│
+├── JURISDICTION
+│   ├── Territorial jurisdiction
+│   ├── Nationality jurisdiction
+│   ├── Victim-based jurisdiction
+│   ├── Effects jurisdiction
+│   ├── Protective jurisdiction
+│   ├── Universal jurisdiction
+│   ├── Extraterritorial statutes
+│   └── Conflicting jurisdiction
+│
+├── CROSS-BORDER DATA
+│   ├── Data location
+│   ├── Data-controller location
+│   ├── Data-processor location
+│   ├── User location
+│   ├── Victim location
+│   ├── Server location
+│   ├── Cloud-provider jurisdiction
+│   ├── Data-transfer mechanisms
+│   ├── Preservation requests
+│   ├── Production orders
+│   ├── Mutual Legal Assistance
+│   └── Extradition
+│
+├── PRIVACY / DATA PROTECTION
+│   ├── GDPR
+│   ├── UK GDPR
+│   ├── EU Data Protection Directive framework
+│   ├── Convention 108+
+│   ├── National privacy laws
+│   ├── Data localization
+│   ├── Cross-border transfers
+│   ├── Consent
+│   ├── Data minimization
+│   ├── Purpose limitation
+│   ├── Retention
+│   ├── Access rights
+│   ├── Erasure rights
+│   └── Security obligations
+│
+├── CYBERCRIME
+│   ├── Unauthorized access
+│   ├── Unauthorized interception
+│   ├── Malware
+│   ├── Ransomware
+│   ├── DDoS
+│   ├── Botnets
+│   ├── Credential theft
+│   ├── Identity theft
+│   ├── Computer fraud
+│   ├── Data theft
+│   ├── Data destruction
+│   ├── System disruption
+│   ├── Cyberstalking
+│   ├── Online harassment
+│   ├── Child sexual exploitation material
+│   ├── Cyberterrorism
+│   └── Critical-infrastructure attacks
+│
+├── NETWORK INTERCEPTION
+│   ├── Packet interception
+│   ├── Communications interception
+│   ├── Wiretapping
+│   ├── Traffic-data collection
+│   ├── Metadata collection
+│   ├── Deep-packet inspection
+│   ├── Network monitoring
+│   └── Lawful interception
+│
+├── CRITICAL INFRASTRUCTURE
+│   ├── Energy
+│   ├── Telecommunications
+│   ├── Banking
+│   ├── Healthcare
+│   ├── Transportation
+│   ├── Water
+│   ├── Government
+│   ├── Defense
+│   └── Internet infrastructure
+│
+├── TELECOMMUNICATIONS
+│   ├── Spectrum licensing
+│   ├── Telecommunications licensing
+│   ├── Carrier obligations
+│   ├── SIM registration
+│   ├── Numbering
+│   ├── Roaming
+│   ├── Interconnection
+│   ├── Lawful interception
+│   └── Emergency communications
+│
+├── INTERNET INFRASTRUCTURE
+│   ├── ICANN
+│   ├── IANA
+│   ├── Regional Internet Registries
+│   │   ├── ARIN
+│   │   ├── RIPE NCC
+│   │   ├── APNIC
+│   │   ├── LACNIC
+│   │   └── AFRINIC
+│   ├── DNS
+│   ├── Domain registration
+│   ├── IP address allocation
+│   ├── ASN allocation
+│   └── WHOIS / RDAP
+│
+├── CONTENT / PLATFORM LAW
+│   ├── Illegal content
+│   ├── Defamation
+│   ├── Copyright
+│   ├── Trademark
+│   ├── Hate speech
+│   ├── Extremist content
+│   ├── Child safety
+│   ├── Platform liability
+│   ├── Content moderation
+│   └── Government takedown orders
+│
+├── INTELLECTUAL PROPERTY
+│   ├── Copyright
+│   ├── Software copyright
+│   ├── Patents
+│   ├── Trademarks
+│   ├── Trade secrets
+│   ├── Database rights
+│   └── Digital-rights enforcement
+│
+├── CYBERSECURITY REGULATION
+│   ├── Security controls
+│   ├── Incident reporting
+│   ├── Vulnerability disclosure
+│   ├── Risk management
+│   ├── Breach notification
+│   ├── Supply-chain security
+│   ├── Security certification
+│   └── Critical-service obligations
+│
+├── ELECTRONIC EVIDENCE
+│   ├── Logs
+│   ├── IP addresses
+│   ├── Subscriber information
+│   ├── Traffic data
+│   ├── Content data
+│   ├── DNS records
+│   ├── Domain-registration data
+│   ├── Cloud data
+│   ├── Device data
+│   ├── Chain of custody
+│   ├── Preservation
+│   └── Authentication
+│
+├── INTERNATIONAL PROCEDURE
+│   ├── Mutual Legal Assistance Treaty (MLAT)
+│   ├── Letters rogatory
+│   ├── Extradition
+│   ├── Joint investigations
+│   ├── 24/7 cybercrime contacts
+│   ├── Emergency preservation
+│   ├── Cross-border searches
+│   └── Cross-border evidence requests
+│
+└── GOVERNMENT / NATIONAL SECURITY
+    ├── Intelligence authorities
+    ├── Cyber operations
+    ├── Surveillance
+    ├── National-security exceptions
+    ├── Export controls
+    ├── Sanctions
+    ├── State-sponsored cyber operations
+    ├── Critical infrastructure
+    └── Military cyber operations
