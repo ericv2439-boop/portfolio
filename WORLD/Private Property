@@ -1,0 +1,131 @@
+PRIVATE_PROPERTY
+│
+├── IDENTITY
+│   ├── property_id
+│   ├── property_type
+│   ├── parcel_identifier
+│   ├── building_identifier
+│   ├── registry_identifier
+│   └── parent_property_id
+│
+├── GEOSPATIAL
+│   ├── coordinates
+│   ├── parcel_boundary
+│   ├── building_footprint
+│   ├── floor_area
+│   ├── land_area
+│   ├── elevation
+│   ├── H3_index
+│   └── geographic_precision
+│
+├── PROPERTY_TYPE
+│   ├── residential
+│   ├── commercial
+│   ├── industrial
+│   ├── agricultural
+│   ├── mixed_use
+│   ├── undeveloped_land
+│   ├── warehouse
+│   ├── office
+│   ├── retail
+│   └── specialized_facility
+│
+├── PHYSICAL_STATE
+│   ├── construction_year
+│   ├── structural_condition
+│   ├── renovation_state
+│   ├── building_materials
+│   ├── usable_area
+│   ├── occupancy_state
+│   ├── remaining_life_estimate
+│   └── maintenance_state
+│
+├── UTILITIES
+│   ├── electricity_connection
+│   ├── electricity_capacity
+│   ├── water_connection
+│   ├── water_capacity
+│   ├── wastewater
+│   ├── natural_gas
+│   ├── telecommunications
+│   └── internet_connectivity
+│
+├── INFRASTRUCTURE_ACCESS
+│   ├── road_access
+│   ├── public_transport
+│   ├── airport_access
+│   ├── port_access
+│   ├── logistics_access
+│   └── emergency_access
+│
+├── LEGAL_STATE
+│   ├── ownership_structure
+│   ├── title_status
+│   ├── tenure_type
+│   ├── easements
+│   ├── liens
+│   ├── mortgages
+│   ├── leases
+│   ├── zoning
+│   ├── development_rights
+│   ├── restrictions
+│   └── legal_status
+│
+├── ECONOMIC_STATE
+│   ├── estimated_market_value
+│   ├── assessed_value
+│   ├── replacement_cost
+│   ├── rental_value
+│   ├── operating_cost
+│   ├── property_tax
+│   ├── historical_transactions
+│   └── valuation_timestamp
+│
+├── PRODUCTIVE_CAPACITY
+│   ├── residential_capacity
+│   ├── commercial_capacity
+│   ├── industrial_capacity
+│   ├── agricultural_capacity
+│   ├── storage_capacity
+│   └── energy_generation_capacity
+│
+├── RESOURCE_STATE
+│   ├── water_resources
+│   ├── mineral_resources
+│   ├── agricultural_resources
+│   ├── timber
+│   ├── energy_resources
+│   └── other_material_resources
+│
+├── MARKET_STATE
+│   ├── listing_status
+│   ├── asking_price
+│   ├── transaction_price
+│   ├── days_on_market
+│   ├── rental_demand
+│   └── local_market_index
+│
+├── RELATIONSHIPS
+│   ├── located_in → jurisdiction
+│   ├── owned_by → legal_entity
+│   ├── leased_to → legal_entity
+│   ├── managed_by → organization
+│   ├── financed_by → financial_entity
+│   ├── connected_to → infrastructure
+│   └── adjacent_to → property
+│
+├── TEMPORAL_STATE
+│   ├── construction_history
+│   ├── ownership_history
+│   ├── transaction_history
+│   ├── renovation_history
+│   ├── zoning_history
+│   └── valuation_history
+│
+└── EPISTEMIC_STATE
+    ├── classification
+    ├── confidence_vector
+    ├── provenance
+    ├── observation_time
+    ├── valid_time
+    └── data_completeness
