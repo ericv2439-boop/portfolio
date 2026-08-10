@@ -1,0 +1,244 @@
+WORLD // NEXUS — Comprehensive System Architecture & Implementation Specification
+
+
+Core Philosophy: WORLD // NEXUS does not render data. It renders states of knowledge about the world.
+
+
+I. System Overview & Governing Equation
+
+
+WORLD // NEXUS is a planetary-scale spatiotemporal knowledge engine designed to represent civilization through a unified model of entities, relationships, space, time, provenance, and epistemic certainty.
+
+
+The engine obeys the formal state-space equation:
+
+W = F(E, R, S, T, P, Q, \Gamma)
+
+Where:
+
+
+
+
+E (Entities): Distinct real-world or digital objects (companies, assets, people, nodes, vessels, aircraft).
+
+
+R (Relationships): Directed, typed edges linking entities (e.g., operates, owns, routes_to).
+
+
+S (Spatial State): Geographic coordinates, footprints, and H3-indexed spatial distributions.
+
+
+T (Transactions / Bitemporal Model): Dual tracking of Valid Time (when a fact was true in reality) and Observation Time (when the system recorded it).
+
+
+P (Provenance): Append-only, verifiable chains tracing every assertion back to original sources and records.
+
+
+Q (Query Context): Dynamic user parameters, including viewport zoom, spatial radius, active filters, and temporal focus.
+
+
+\Gamma (Epistemic State): Multi-factor confidence vectors and explicit epistemic classification boundaries.
+
+
+
+
+II. Architectural Constitution & Core Rules
+
+
+
+
+The Cardinal Rule (Renderer Independence): The rendering engine is never the source of truth. It is a pure projection of the World-State Engine. The same underlying state can be projected into WebGL (3D globe), REST APIs, analytical terminals, or automated reports without mutating state.
+
+
+Distributed Engine over Unified State: At scale, the World-State Engine abstracts distributed stores, event streams, and graph indexes, presenting a single coherent state interface.
+
+
+Minimum-Representation Principle: The system scales via spatial aggregation (H3 hexagonal grids), volumetric textures, and Level-of-Detail (LOD) compression rather than rendering raw, unaggregated entity clouds at global scale.
+
+
+
+
+III. Epistemic Classification & Confidence Vectors
+
+
+1. Epistemic States
+
+
+The system strictly enforces six discrete epistemic classifications without silent data transformation:
+
+
+
+
+KNOWN: Directly verified via authoritative registries or cryptographic proof.
+
+
+INFERRED: Strongly supported structural relationships derived via multi-source correlation.
+
+
+ESTIMATED: Model-derived approximations (statistical, economic, or spatial simulations).
+
+
+CONFLICTED: Unresolved contradictions between trusted sources (preserved explicitly rather than forced).
+
+
+UNKNOWN: Explicit absence of reliable data (unknown \neq zero).
+
+
+RESTRICTED: Information exists within structural or legal systems but lacks legitimate public accessibility.
+
+
+
+
+2. Multi-Factor Confidence Vector (C)
+
+
+Confidence is decomposed into seven independent dimensions to prevent nuance collapse:
+
+
+
+
+Source Reliability: Credibility history of the reporting authority.
+
+
+Measurement Quality: Precision and fidelity of the initial capture.
+
+
+Temporal Freshness: Proximity of the observation to current valid time.
+
+
+Cross-Source Agreement: Verification across independent registries/channels.
+
+
+Methodological Confidence: Rigor of the inference or ingestion method.
+
+
+Spatial Accuracy: Precision of geographic attribution.
+
+
+Completeness: Absence of missing data fields in the record.
+
+
+
+
+IV. Bitemporal Data Architecture
+
+
+Every entity and relationship maintains an immutable bitemporal ledger:
+
+
+
+
+Valid Time (valid_from → valid_to): The interval during which the state was true in the physical or digital world.
+
+
+Observation Time / Transaction Time (observed_at): The exact timestamp when NEXUS ingested or registered the observation.
+
+
+Capability: Enables retrospective temporal slicing ("What did NEXUS believe on date X regarding valid state on date Y?") and tracks confidence evolution across revisions (Version 1 \to Version 2 \to Version 3).
+
+
+
+
+V. Semantic Resolution (Zoom Levels)
+
+
+Navigation shifts the fundamental meaning and granularity of the visualization across six distinct tiers:
+
+
+
+
+Zoom 1 — Earth (Planetary): Planetary hexagonal population density, economic fields, global network corridors, and aggregate flow vectors.
+
+
+Zoom 2 — Continent (Regional): National boundaries, continental infrastructure, Tier-1 autonomous systems, and major transport corridors.
+
+
+Zoom 3 — Country (National): Regional clusters, enterprise footprints, national facilities, and major transport hubs.
+
+
+Zoom 4 — City (Urban): Urban density fields, local infrastructure networks, and metropolitan asset clustering.
+
+
+Zoom 5 — Entity (Asset/Organization): Individual companies, aircraft, vessels, domains, ASNs, and interactive relationship graphs.
+
+
+Zoom 6 — Record (Provenance): Raw source logs, registry certificates, cryptographic proofs, and complete observation history chains.
+
+
+
+
+VI. User Interface & Inspector Requirements
+
+
+1. The 3D Planetary Observatory View
+
+
+
+
+Physically plausible Earth rendering with atmospheric scattering, night-side city illumination, and real-time volumetric data layers.
+
+
+Dynamic toggles for system layers: Population, Economy, Internet Topology, Air Traffic, Maritime Traffic, Financial Markets, Blockchain, Companies, Infrastructure, Environment.
+
+
+
+
+2. The Knowledge Inspector
+
+
+
+
+A contextual side panel displaying target entities, confidence radar vectors, live relationship edges, and complete provenance evidence trails.
+
+
+Interactive resolution tracing from screen pixels back through aggregation grids, entities, events, provenance chains, and source documents.
+
+
+
+
+VII. Phase 0 Vertical Slice Implementation Scope
+
+
+To build the initial prototype, developers must scope the environment and data ingestion pipeline as follows:
+
+
+
+
+Geographic Boundary: San Francisco sector.
+
+
+Entity Count: ~100 core entities spanning aviation (flights/aircraft), maritime (vessels), corporate registries, domain/ASN infrastructure, blockchain txns, and physical properties.
+
+
+Mandatory Interactive Validation Loop (Definition of Done):
+
+
+Initialize the system and render the 3D globe.
+
+
+Focus viewport on San Francisco.
+
+
+Zoom in to transition from planetary aggregation to local knowledge fields.
+
+
+Select a specific entity to trigger the Knowledge Inspector.
+
+
+Inspect its bitemporal state, multi-factor confidence, and provenance chain.
+
+
+Modify the temporal navigation slider and observe state evolution over time.
+
+
+Adjust epistemic/confidence filters and observe dynamic projection changes.
+
+
+Zoom out to verify the entity gracefully dissolves back into aggregate spatial density fields.
+
+
+
+
+
+
+
