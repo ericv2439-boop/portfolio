@@ -1,0 +1,1020 @@
+PYTHON
+│
+├── BASIC EXECUTION
+│   ├── python
+│   ├── python -c "<CODE>"
+│   ├── python -m <MODULE>
+│   ├── python <SCRIPT>.py
+│   ├── python -i <SCRIPT>.py
+│   ├── python -V
+│   └── python --version
+│
+├── VARIABLES
+│   ├── x = value
+│   ├── x += value
+│   ├── x -= value
+│   ├── x *= value
+│   ├── x /= value
+│   ├── x //= value
+│   ├── x %= value
+│   ├── x **= value
+│   ├── x := value
+│   └── del x
+│
+├── DATA TYPES
+│   ├── int
+│   ├── float
+│   ├── complex
+│   ├── bool
+│   ├── str
+│   ├── bytes
+│   ├── bytearray
+│   ├── list
+│   ├── tuple
+│   ├── set
+│   ├── frozenset
+│   ├── dict
+│   ├── range
+│   └── None
+│
+├── CONVERSION
+│   ├── int()
+│   ├── float()
+│   ├── complex()
+│   ├── bool()
+│   ├── str()
+│   ├── bytes()
+│   ├── bytearray()
+│   ├── list()
+│   ├── tuple()
+│   ├── set()
+│   ├── frozenset()
+│   ├── dict()
+│   └── bin()
+│
+├── INPUT / OUTPUT
+│   ├── print()
+│   ├── input()
+│   ├── open()
+│   ├── sys.stdin
+│   ├── sys.stdout
+│   ├── sys.stderr
+│   ├── stdout.write()
+│   └── stderr.write()
+│
+├── STRINGS
+│   ├── str.upper()
+│   ├── str.lower()
+│   ├── str.title()
+│   ├── str.capitalize()
+│   ├── str.swapcase()
+│   ├── str.strip()
+│   ├── str.lstrip()
+│   ├── str.rstrip()
+│   ├── str.split()
+│   ├── str.rsplit()
+│   ├── str.splitlines()
+│   ├── str.join()
+│   ├── str.replace()
+│   ├── str.find()
+│   ├── str.rfind()
+│   ├── str.index()
+│   ├── str.startswith()
+│   ├── str.endswith()
+│   ├── str.count()
+│   ├── str.encode()
+│   ├── str.isalpha()
+│   ├── str.isdigit()
+│   ├── str.isalnum()
+│   ├── str.isspace()
+│   ├── str.islower()
+│   ├── str.isupper()
+│   └── f"{variable}"
+│
+├── LISTS
+│   ├── list.append()
+│   ├── list.extend()
+│   ├── list.insert()
+│   ├── list.remove()
+│   ├── list.pop()
+│   ├── list.clear()
+│   ├── list.index()
+│   ├── list.count()
+│   ├── list.sort()
+│   ├── list.reverse()
+│   ├── sorted()
+│   ├── reversed()
+│   └── list.copy()
+│
+├── DICTIONARIES
+│   ├── dict.keys()
+│   ├── dict.values()
+│   ├── dict.items()
+│   ├── dict.get()
+│   ├── dict.setdefault()
+│   ├── dict.update()
+│   ├── dict.pop()
+│   ├── dict.popitem()
+│   ├── dict.clear()
+│   └── dict.copy()
+│
+├── SETS
+│   ├── set.add()
+│   ├── set.remove()
+│   ├── set.discard()
+│   ├── set.pop()
+│   ├── set.clear()
+│   ├── set.union()
+│   ├── set.intersection()
+│   ├── set.difference()
+│   ├── set.symmetric_difference()
+│   ├── set.issubset()
+│   └── set.issuperset()
+│
+├── CONTROL FLOW
+│   ├── if
+│   ├── elif
+│   ├── else
+│   ├── for
+│   ├── while
+│   ├── break
+│   ├── continue
+│   ├── pass
+│   ├── match
+│   └── case
+│
+├── OPERATORS
+│   ├── +
+│   ├── -
+│   ├── *
+│   ├── /
+│   ├── //
+│   ├── %
+│   ├── **
+│   ├── ==
+│   ├── !=
+│   ├── <
+│   ├── >
+│   ├── <=
+│   ├── >=
+│   ├── and
+│   ├── or
+│   ├── not
+│   ├── in
+│   ├── not in
+│   ├── is
+│   ├── is not
+│   ├── &
+│   ├── |
+│   ├── ^
+│   ├── ~
+│   ├── <<
+│   └── >>
+│
+├── LOOPS
+│   ├── for x in iterable
+│   ├── while condition
+│   ├── enumerate()
+│   ├── zip()
+│   ├── range()
+│   ├── iter()
+│   ├── next()
+│   └── itertools
+│
+├── COMPREHENSIONS
+│   ├── [x for x in iterable]
+│   ├── [x for x in iterable if condition]
+│   ├── {x for x in iterable}
+│   ├── {k:v for k,v in iterable}
+│   └── (x for x in iterable)
+│
+├── FUNCTIONS
+│   ├── def
+│   ├── return
+│   ├── *args
+│   ├── **kwargs
+│   ├── lambda
+│   ├── map()
+│   ├── filter()
+│   ├── reduce()
+│   ├── functools
+│   └── operator
+│
+├── FUNCTION DECORATORS
+│   ├── @decorator
+│   ├── @staticmethod
+│   ├── @classmethod
+│   └── @property
+│
+├── OBJECT-ORIENTED PROGRAMMING
+│   ├── class
+│   ├── __init__
+│   ├── self
+│   ├── inheritance
+│   ├── super()
+│   ├── isinstance()
+│   ├── issubclass()
+│   ├── getattr()
+│   ├── setattr()
+│   ├── hasattr()
+│   ├── delattr()
+│   └── @dataclass
+│
+├── EXCEPTIONS
+│   ├── try
+│   ├── except
+│   ├── else
+│   ├── finally
+│   ├── raise
+│   ├── assert
+│   ├── Exception
+│   ├── ValueError
+│   ├── TypeError
+│   ├── KeyError
+│   ├── IndexError
+│   ├── FileNotFoundError
+│   ├── PermissionError
+│   ├── TimeoutError
+│   └── KeyboardInterrupt
+│
+├── MODULES
+│   ├── import
+│   ├── from ... import
+│   ├── as
+│   ├── __name__
+│   ├── __main__
+│   ├── sys.path
+│   ├── importlib
+│   └── pkgutil
+│
+├── FILESYSTEM
+│   ├── os
+│   ├── os.getcwd()
+│   ├── os.chdir()
+│   ├── os.listdir()
+│   ├── os.mkdir()
+│   ├── os.makedirs()
+│   ├── os.remove()
+│   ├── os.rmdir()
+│   ├── os.rename()
+│   ├── os.replace()
+│   ├── os.path.exists()
+│   ├── os.path.isfile()
+│   ├── os.path.isdir()
+│   ├── os.path.join()
+│   ├── os.path.abspath()
+│   ├── os.path.basename()
+│   ├── os.path.dirname()
+│   ├── os.path.splitext()
+│   ├── pathlib
+│   ├── Path.cwd()
+│   ├── Path.iterdir()
+│   ├── Path.mkdir()
+│   ├── Path.unlink()
+│   ├── Path.rename()
+│   ├── Path.rglob()
+│   ├── Path.read_text()
+│   ├── Path.write_text()
+│   ├── Path.read_bytes()
+│   └── Path.write_bytes()
+│
+├── FILE HANDLING
+│   ├── open()
+│   ├── read()
+│   ├── readline()
+│   ├── readlines()
+│   ├── write()
+│   ├── writelines()
+│   ├── seek()
+│   ├── tell()
+│   ├── flush()
+│   └── close()
+│
+├── FILE MODES
+│   ├── r
+│   ├── w
+│   ├── a
+│   ├── x
+│   ├── b
+│   ├── t
+│   ├── +
+│   └── rb / wb / ab / r+
+│
+├── FILE FORMATS
+│   ├── json
+│   ├── csv
+│   ├── configparser
+│   ├── tomllib
+│   ├── sqlite3
+│   ├── pickle
+│   └── struct
+│
+├── SYSTEM
+│   ├── sys
+│   ├── sys.argv
+│   ├── sys.exit()
+│   ├── sys.platform
+│   ├── sys.version
+│   ├── sys.executable
+│   ├── os.environ
+│   ├── os.system()
+│   ├── os.getpid()
+│   ├── os.getppid()
+│   ├── os.cpu_count()
+│   ├── platform
+│   ├── platform.system()
+│   ├── platform.release()
+│   ├── platform.machine()
+│   ├── platform.processor()
+│   └── platform.platform()
+│
+├── PROCESSES
+│   ├── subprocess
+│   ├── subprocess.run()
+│   ├── subprocess.Popen()
+│   ├── subprocess.call()
+│   ├── subprocess.check_call()
+│   ├── subprocess.check_output()
+│   ├── Popen.communicate()
+│   ├── Popen.poll()
+│   ├── Popen.wait()
+│   ├── Popen.terminate()
+│   └── Popen.kill()
+│
+├── PROCESS INFORMATION
+│   ├── psutil
+│   ├── psutil.cpu_percent()
+│   ├── psutil.cpu_count()
+│   ├── psutil.virtual_memory()
+│   ├── psutil.disk_usage()
+│   ├── psutil.net_io_counters()
+│   ├── psutil.net_connections()
+│   ├── psutil.process_iter()
+│   └── psutil.Process()
+│
+├── NETWORKING
+│   ├── socket
+│   ├── socket.socket()
+│   ├── socket.gethostname()
+│   ├── socket.gethostbyname()
+│   ├── socket.getaddrinfo()
+│   ├── socket.getfqdn()
+│   ├── socket.create_connection()
+│   ├── socket.getservbyname()
+│   ├── socket.getservbyport()
+│   ├── socket.AF_INET
+│   ├── socket.AF_INET6
+│   ├── socket.SOCK_STREAM
+│   └── socket.SOCK_DGRAM
+│
+├── HTTP
+│   ├── urllib
+│   ├── urllib.request
+│   ├── urllib.parse
+│   ├── urllib.error
+│   ├── http.client
+│   ├── requests
+│   ├── httpx
+│   └── aiohttp
+│
+├── DNS
+│   ├── socket.gethostbyname()
+│   ├── socket.getaddrinfo()
+│   ├── dnspython
+│   └── dns.resolver
+│
+├── NETWORK DIAGNOSTICS
+│   ├── socket
+│   ├── psutil
+│   ├── subprocess
+│   ├── ipaddress
+│   ├── ping libraries
+│   ├── scapy
+│   └── netifaces
+│
+├── IP ADDRESSING
+│   ├── ipaddress.ip_address()
+│   ├── ipaddress.ip_network()
+│   ├── ipaddress.ip_interface()
+│   ├── IPv4Address
+│   ├── IPv6Address
+│   ├── IPv4Network
+│   ├── IPv6Network
+│   ├── subnet_of()
+│   ├── supernet_of()
+│   ├── hosts()
+│   └── overlaps()
+│
+├── PACKETS
+│   ├── scapy
+│   ├── Ether()
+│   ├── IP()
+│   ├── IPv6()
+│   ├── TCP()
+│   ├── UDP()
+│   ├── ICMP()
+│   ├── ARP()
+│   ├── DNS()
+│   ├── send()
+│   ├── sendp()
+│   ├── sr()
+│   ├── sr1()
+│   ├── sniff()
+│   └── wrpcap()
+│
+├── PORTS
+│   ├── socket.bind()
+│   ├── socket.listen()
+│   ├── socket.accept()
+│   ├── socket.connect()
+│   ├── socket.send()
+│   ├── socket.recv()
+│   └── socket.close()
+│
+├── TCP
+│   ├── socket.SOCK_STREAM
+│   ├── bind()
+│   ├── listen()
+│   ├── accept()
+│   ├── connect()
+│   ├── send()
+│   ├── sendall()
+│   └── recv()
+│
+├── UDP
+│   ├── socket.SOCK_DGRAM
+│   ├── sendto()
+│   ├── recvfrom()
+│   └── bind()
+│
+├── ASYNC NETWORKING
+│   ├── asyncio
+│   ├── asyncio.run()
+│   ├── asyncio.create_task()
+│   ├── asyncio.gather()
+│   ├── asyncio.sleep()
+│   ├── async def
+│   ├── await
+│   └── asyncio.start_server()
+│
+├── THREADING
+│   ├── threading
+│   ├── Thread()
+│   ├── start()
+│   ├── join()
+│   ├── Lock()
+│   ├── RLock()
+│   ├── Event()
+│   ├── Semaphore()
+│   └── Condition()
+│
+├── MULTIPROCESSING
+│   ├── multiprocessing
+│   ├── Process()
+│   ├── Pool()
+│   ├── Queue()
+│   ├── Pipe()
+│   ├── Lock()
+│   └── Manager()
+│
+├── CONCURRENCY
+│   ├── concurrent.futures
+│   ├── ThreadPoolExecutor
+│   ├── ProcessPoolExecutor
+│   ├── Future
+│   ├── submit()
+│   └── as_completed()
+│
+├── TIME
+│   ├── time
+│   ├── time.time()
+│   ├── time.monotonic()
+│   ├── time.sleep()
+│   ├── datetime
+│   ├── datetime.now()
+│   ├── datetime.utcnow()
+│   ├── timedelta
+│   ├── timezone
+│   └── zoneinfo
+│
+├── RANDOMNESS
+│   ├── random
+│   ├── random.random()
+│   ├── random.randint()
+│   ├── random.randrange()
+│   ├── random.choice()
+│   ├── random.sample()
+│   ├── random.shuffle()
+│   ├── random.uniform()
+│   ├── random.seed()
+│   └── secrets
+│
+├── MATHEMATICS
+│   ├── math
+│   ├── math.sqrt()
+│   ├── math.pow()
+│   ├── math.exp()
+│   ├── math.log()
+│   ├── math.log10()
+│   ├── math.sin()
+│   ├── math.cos()
+│   ├── math.tan()
+│   ├── math.floor()
+│   ├── math.ceil()
+│   ├── math.factorial()
+│   ├── math.gcd()
+│   ├── statistics
+│   ├── decimal
+│   ├── fractions
+│   └── cmath
+│
+├── DATA PROCESSING
+│   ├── collections
+│   ├── collections.Counter
+│   ├── collections.defaultdict
+│   ├── collections.deque
+│   ├── itertools
+│   ├── functools
+│   └── operator
+│
+├── REGEX
+│   ├── re
+│   ├── re.search()
+│   ├── re.match()
+│   ├── re.fullmatch()
+│   ├── re.findall()
+│   ├── re.finditer()
+│   ├── re.split()
+│   ├── re.sub()
+│   ├── re.compile()
+│   └── re.escape()
+│
+├── HASHING / CRYPTOGRAPHY
+│   ├── hashlib
+│   ├── md5()
+│   ├── sha1()
+│   ├── sha224()
+│   ├── sha256()
+│   ├── sha384()
+│   ├── sha512()
+│   ├── sha3_256()
+│   ├── blake2b()
+│   ├── hmac
+│   ├── secrets
+│   └── ssl
+│
+├── TLS / SSL
+│   ├── ssl
+│   ├── SSLContext
+│   ├── create_default_context()
+│   ├── wrap_socket()
+│   ├── ssl.create_default_context()
+│   └── ssl.get_server_certificate()
+│
+├── DATABASES
+│   ├── sqlite3
+│   ├── sqlite3.connect()
+│   ├── cursor()
+│   ├── execute()
+│   ├── executemany()
+│   ├── fetchone()
+│   ├── fetchall()
+│   ├── commit()
+│   └── rollback()
+│
+├── SERIALIZATION
+│   ├── json.dumps()
+│   ├── json.loads()
+│   ├── json.dump()
+│   ├── json.load()
+│   ├── pickle
+│   ├── struct
+│   └── marshal
+│
+├── COMPRESSION
+│   ├── gzip
+│   ├── zipfile
+│   ├── tarfile
+│   ├── bz2
+│   ├── lzma
+│   └── zlib
+│
+├── ARCHIVES
+│   ├── zipfile.ZipFile
+│   ├── tarfile.open
+│   ├── shutil.make_archive()
+│   └── shutil.unpack_archive()
+│
+├── LOGGING
+│   ├── logging
+│   ├── logging.debug()
+│   ├── logging.info()
+│   ├── logging.warning()
+│   ├── logging.error()
+│   ├── logging.critical()
+│   ├── logging.exception()
+│   ├── FileHandler
+│   ├── StreamHandler
+│   ├── Formatter
+│   └── Logger
+│
+├── ARGUMENTS
+│   ├── argparse
+│   ├── ArgumentParser
+│   ├── add_argument()
+│   ├── parse_args()
+│   ├── sys.argv
+│   └── argparse subparsers
+│
+├── ENVIRONMENT
+│   ├── os.environ
+│   ├── os.getenv()
+│   ├── os.putenv()
+│   ├── os.unsetenv()
+│   └── dotenv
+│
+├── ENVIRONMENT / PACKAGES
+│   ├── pip
+│   ├── python -m pip
+│   ├── pip install
+│   ├── pip uninstall
+│   ├── pip list
+│   ├── pip freeze
+│   ├── pip show
+│   ├── pip check
+│   ├── pip cache
+│   └── pip install -r requirements.txt
+│
+├── VIRTUAL ENVIRONMENTS
+│   ├── python -m venv <ENV>
+│   ├── activate
+│   ├── deactivate
+│   └── pyvenv.cfg
+│
+├── PACKAGE MANAGEMENT
+│   ├── pip
+│   ├── setuptools
+│   ├── wheel
+│   ├── pyproject.toml
+│   └── requirements.txt
+│
+├── TESTING
+│   ├── unittest
+│   ├── pytest
+│   ├── assert
+│   ├── TestCase
+│   ├── mock
+│   └── unittest.mock
+│
+├── DEBUGGING
+│   ├── pdb
+│   ├── breakpoint()
+│   ├── traceback
+│   ├── inspect
+│   ├── dis
+│   └── sys.settrace()
+│
+├── PROFILING
+│   ├── timeit
+│   ├── cProfile
+│   ├── profile
+│   ├── pstats
+│   └── tracemalloc
+│
+├── MEMORY
+│   ├── gc
+│   ├── gc.collect()
+│   ├── sys.getsizeof()
+│   ├── tracemalloc
+│   └── weakref
+│
+├── SYSTEM AUTOMATION
+│   ├── subprocess
+│   ├── os
+│   ├── shutil
+│   ├── pathlib
+│   ├── tempfile
+│   ├── glob
+│   ├── fnmatch
+│   └── watchdog
+│
+├── PROCESS AUTOMATION
+│   ├── subprocess.run()
+│   ├── subprocess.Popen()
+│   ├── psutil
+│   ├── os.kill()
+│   └── signal
+│
+├── SIGNALS
+│   ├── signal
+│   ├── SIGINT
+│   ├── SIGTERM
+│   ├── SIGKILL
+│   ├── SIGCHLD
+│   └── signal.signal()
+│
+├── GUI AUTOMATION
+│   ├── tkinter
+│   ├── PyAutoGUI
+│   ├── keyboard
+│   └── mouse
+│
+├── WINDOWS
+│   ├── ctypes
+│   ├── winreg
+│   ├── pywin32
+│   ├── win32api
+│   ├── win32con
+│   ├── win32service
+│   ├── win32event
+│   ├── win32process
+│   └── win32gui
+│
+├── LINUX / UNIX
+│   ├── os
+│   ├── pathlib
+│   ├── subprocess
+│   ├── pwd
+│   ├── grp
+│   ├── resource
+│   ├── signal
+│   └── fcntl
+│
+├── WEB SCRAPING
+│   ├── requests
+│   ├── httpx
+│   ├── urllib
+│   ├── BeautifulSoup
+│   ├── lxml
+│   ├── Selenium
+│   └── Playwright
+│
+├── WEB SERVERS
+│   ├── http.server
+│   ├── Flask
+│   ├── FastAPI
+│   ├── Django
+│   └── aiohttp
+│
+├── APIs
+│   ├── requests.get()
+│   ├── requests.post()
+│   ├── requests.put()
+│   ├── requests.patch()
+│   ├── requests.delete()
+│   ├── requests.Session()
+│   ├── httpx.Client()
+│   └── API authentication
+│
+├── HTML / XML
+│   ├── html
+│   ├── html.escape()
+│   ├── xml
+│   ├── ElementTree
+│   └── lxml
+│
+├── DATA SCIENCE
+│   ├── numpy
+│   ├── pandas
+│   ├── scipy
+│   ├── matplotlib
+│   ├── sympy
+│   ├── scikit-learn
+│   └── statsmodels
+│
+├── NUMPY
+│   ├── np.array()
+│   ├── np.zeros()
+│   ├── np.ones()
+│   ├── np.arange()
+│   ├── np.linspace()
+│   ├── np.reshape()
+│   ├── np.mean()
+│   ├── np.std()
+│   ├── np.sum()
+│   ├── np.min()
+│   ├── np.max()
+│   ├── np.dot()
+│   └── np.linalg
+│
+├── PANDAS
+│   ├── DataFrame
+│   ├── Series
+│   ├── read_csv()
+│   ├── read_json()
+│   ├── read_excel()
+│   ├── to_csv()
+│   ├── to_json()
+│   ├── groupby()
+│   ├── merge()
+│   ├── concat()
+│   ├── sort_values()
+│   ├── drop()
+│   ├── fillna()
+│   └── dropna()
+│
+├── VISUALIZATION
+│   ├── matplotlib
+│   ├── pyplot
+│   ├── plot()
+│   ├── scatter()
+│   ├── bar()
+│   ├── hist()
+│   ├── imshow()
+│   ├── figure()
+│   ├── subplots()
+│   └── savefig()
+│
+├── COMPUTER VISION
+│   ├── OpenCV
+│   ├── cv2.imread()
+│   ├── cv2.imwrite()
+│   ├── cv2.imshow()
+│   ├── cv2.resize()
+│   ├── cv2.cvtColor()
+│   ├── cv2.threshold()
+│   ├── cv2.Canny()
+│   ├── cv2.findContours()
+│   ├── cv2.VideoCapture()
+│   └── cv2.VideoWriter()
+│
+├── MACHINE LEARNING
+│   ├── scikit-learn
+│   ├── PyTorch
+│   ├── TensorFlow
+│   ├── JAX
+│   ├── transformers
+│   ├── datasets
+│   └── tokenizers
+│
+├── SERIAL / HARDWARE
+│   ├── pyserial
+│   ├── serial.Serial()
+│   ├── serial.tools.list_ports
+│   ├── smbus
+│   ├── gpio
+│   └── hid
+│
+├── FILE WATCHING
+│   ├── watchdog
+│   ├── Observer
+│   ├── FileSystemEventHandler
+│   ├── on_created()
+│   ├── on_deleted()
+│   ├── on_modified()
+│   └── on_moved()
+│
+├── SCHEDULING
+│   ├── schedule
+│   ├── APScheduler
+│   ├── threading.Timer
+│   ├── time.sleep()
+│   └── cron / Task Scheduler integration
+│
+├── EMAIL
+│   ├── smtplib
+│   ├── email
+│   ├── SMTP
+│   ├── SMTP_SSL
+│   ├── MIMEText
+│   ├── MIMEImage
+│   └── MIMEApplication
+│
+├── SSH
+│   ├── paramiko
+│   ├── SSHClient
+│   ├── connect()
+│   ├── exec_command()
+│   ├── open_sftp()
+│   └── SFTPClient
+│
+├── HASHES / FILE INTEGRITY
+│   ├── hashlib
+│   ├── sha256()
+│   ├── sha512()
+│   ├── blake2b()
+│   ├── hmac
+│   └── secrets
+│
+├── ENVIRONMENT / CONFIGURATION
+│   ├── os.environ
+│   ├── configparser
+│   ├── tomllib
+│   ├── json
+│   ├── yaml
+│   └── dotenv
+│
+├── TERMINAL
+│   ├── sys
+│   ├── shutil.get_terminal_size()
+│   ├── curses
+│   ├── rich
+│   ├── colorama
+│   └── argparse
+│
+├── CLIPBOARD
+│   ├── tkinter
+│   ├── pyperclip
+│   └── clipboard libraries
+│
+├── ARCHITECTURE
+│   ├── __init__.py
+│   ├── modules
+│   ├── packages
+│   ├── classes
+│   ├── decorators
+│   ├── generators
+│   ├── iterators
+│   ├── context managers
+│   ├── dataclasses
+│   └── type hints
+│
+├── TYPE SYSTEM
+│   ├── typing
+│   ├── TypeVar
+│   ├── Generic
+│   ├── Protocol
+│   ├── Literal
+│   ├── Union
+│   ├── Optional
+│   ├── Any
+│   ├── Callable
+│   ├── Iterable
+│   ├── Iterator
+│   └── TypedDict
+│
+├── CONTEXT MANAGERS
+│   ├── with
+│   ├── __enter__()
+│   ├── __exit__()
+│   ├── contextlib
+│   ├── contextmanager
+│   ├── redirect_stdout()
+│   └── suppress()
+│
+├── GENERATORS
+│   ├── yield
+│   ├── yield from
+│   ├── generator expressions
+│   └── send()
+│
+├── ITERATORS
+│   ├── iter()
+│   ├── next()
+│   ├── __iter__()
+│   └── __next__()
+│
+├── MAGIC METHODS
+│   ├── __init__
+│   ├── __str__
+│   ├── __repr__
+│   ├── __len__
+│   ├── __getitem__
+│   ├── __setitem__
+│   ├── __delitem__
+│   ├── __iter__
+│   ├── __next__
+│   ├── __contains__
+│   ├── __call__
+│   ├── __eq__
+│   ├── __lt__
+│   ├── __add__
+│   ├── __enter__
+│   └── __exit__
+│
+├── METAPROGRAMMING
+│   ├── type()
+│   ├── isinstance()
+│   ├── issubclass()
+│   ├── getattr()
+│   ├── setattr()
+│   ├── hasattr()
+│   ├── globals()
+│   ├── locals()
+│   ├── vars()
+│   ├── dir()
+│   └── inspect
+│
+├── AST / CODE GENERATION
+│   ├── ast
+│   ├── ast.parse()
+│   ├── ast.dump()
+│   ├── compile()
+│   ├── exec()
+│   └── eval()
+│
+├── BYTECODE
+│   ├── dis
+│   ├── dis.dis()
+│   ├── compile()
+│   └── marshal
+│
+└── SCRIPT PACKAGING
+    ├── pyproject.toml
+    ├── setuptools
+    ├── wheel
+    ├── build
+    ├── pip
+    ├── PyInstaller
+    ├── cx_Freeze
+    └── Nuitka
