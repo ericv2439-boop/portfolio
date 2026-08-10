@@ -1,0 +1,278 @@
+Yes. I would expand it, but not by simply adding more branches to the existing tree. At this point, WORLD // NEXUS is becoming a genuine planetary knowledge architecture, so the schema should distinguish what exists, what happens, what connects things, what establishes legal meaning, and what proves an assertion.
+
+
+For Phase 0, I'd integrate all five missing domains, while implementing only a minimal vertical slice of each.
+
+
+Recommended expanded architecture
+
+
+WORLD // NEXUS
+│
+├── 01 // ENTITIES
+│   ├── PERSON
+│   ├── ORGANIZATION
+│   ├── GOVERNMENT
+│   ├── JURISDICTION
+│   ├── PROPERTY
+│   ├── OBJECT
+│   ├── RESOURCE
+│   ├── ENERGY
+│   ├── INFRASTRUCTURE
+│   ├── DIGITAL_ASSET
+│   ├── FINANCIAL_ASSET
+│   │
+│   ├── BIOSPHERE
+│   │   ├── ECOSYSTEM
+│   │   ├── BIOME
+│   │   ├── WATERSHED
+│   │   ├── HABITAT
+│   │   ├── SPECIES
+│   │   ├── POPULATION
+│   │   └── AGRICULTURAL_STOCK
+│   │
+│   ├── LEGAL_ASSET
+│   │   ├── CONTRACT
+│   │   ├── TREATY
+│   │   ├── LAW
+│   │   ├── REGULATION
+│   │   ├── COURT_RULING
+│   │   └── LICENSE
+│   │
+│   └── INTELLECTUAL_ASSET
+│       ├── PATENT
+│       ├── TRADEMARK
+│       ├── COPYRIGHT
+│       ├── SOFTWARE_LICENSE
+│       └── DIGITAL_RIGHT
+│
+├── 02 // RELATIONSHIPS
+│   ├── SOCIAL / FAMILY
+│   ├── OWNERSHIP / POSSESSION
+│   ├── ECONOMIC
+│   ├── ORGANIZATIONAL
+│   ├── GOVERNANCE
+│   ├── PHYSICAL
+│   ├── SUPPLY_CHAIN
+│   │
+│   ├── LEGAL
+│   │   ├── governed_by
+│   │   ├── bound_by
+│   │   ├── licensed_to
+│   │   ├── grants_right_to
+│   │   ├── litigates
+│   │   └── violates
+│   │
+│   ├── ECOLOGICAL
+│   │   ├── inhabits
+│   │   ├── depends_on
+│   │   ├── preys_on
+│   │   ├── pollutes
+│   │   └── affects
+│   │
+│   └── NETWORK
+│       ├── routes_to
+│       ├── peers_with
+│       ├── resolves_to
+│       ├── broadcasts_to
+│       ├── transmits_over
+│       └── connected_to
+│
+├── 03 // STATES
+│   ├── PHYSICAL_STATE
+│   ├── RESOURCE_STATE
+│   ├── CAPACITY_STATE
+│   ├── ECONOMIC_STATE
+│   ├── LEGAL_STATE
+│   ├── CIVIL_STATE
+│   ├── ECOLOGICAL_STATE
+│   ├── NETWORK_STATE
+│   └── AVAILABILITY_STATE
+│
+├── 04 // EVENTS
+│   ├── CREATION
+│   ├── ACQUISITION
+│   ├── TRANSFER
+│   ├── PRODUCTION
+│   ├── CONSUMPTION
+│   ├── CONSTRUCTION
+│   ├── REGISTRATION
+│   ├── LEGAL_ACTION
+│   ├── CONTRACT_EXECUTION
+│   ├── ECOLOGICAL_CHANGE
+│   ├── NETWORK_EVENT
+│   └── VALUATION
+│
+├── 05 // VALUE
+│   ├── MONETARY
+│   ├── RESOURCE
+│   ├── PRODUCTIVE
+│   ├── UTILITY
+│   ├── ECOLOGICAL
+│   ├── SCARCITY
+│   └── LIQUIDITY
+│
+├── 06 // SPATIAL MODEL
+│   ├── COORDINATES
+│   ├── GEOMETRY
+│   ├── BOUNDARIES
+│   ├── H3
+│   ├── NETWORK_POSITION
+│   └── SPATIAL_RESOLUTION
+│
+├── 07 // TEMPORAL MODEL
+│   ├── VALID_TIME
+│   ├── OBSERVATION_TIME
+│   ├── TRANSACTION_TIME
+│   └── VERSION
+│
+├── 08 // PROVENANCE & VERIFICATION
+│   ├── SOURCE
+│   ├── DOCUMENT
+│   ├── REGISTRY
+│   ├── OBSERVATION
+│   ├── DERIVATION
+│   │
+│   ├── CRYPTOGRAPHIC_PROOF
+│   │   ├── CONTENT_HASH
+│   │   ├── DIGITAL_SIGNATURE
+│   │   ├── MERKLE_PROOF
+│   │   ├── ZKP_REFERENCE
+│   │   └── STATE_ROOT
+│   │
+│   ├── LEDGER_ANCHOR
+│   │   ├── NETWORK
+│   │   ├── BLOCK_HEIGHT
+│   │   ├── TRANSACTION_HASH
+│   │   └── TIMESTAMP_RECEIPT
+│   │
+│   └── VERIFICATION_EVENT
+│
+├── 09 // EPISTEMIC STATE
+│   ├── KNOWN
+│   ├── INFERRED
+│   ├── ESTIMATED
+│   ├── CONFLICTED
+│   ├── UNKNOWN
+│   ├── RESTRICTED
+│   │
+│   └── CONFIDENCE_VECTOR
+│       ├── SOURCE_RELIABILITY
+│       ├── MEASUREMENT_QUALITY
+│       ├── TEMPORAL_FRESHNESS
+│       ├── CROSS_SOURCE_AGREEMENT
+│       ├── METHODOLOGICAL_CONFIDENCE
+│       ├── SPATIAL_ACCURACY
+│       └── COMPLETENESS
+│
+└── 10 // QUERY / PROJECTION CONTEXT
+    │
+    ├── VIEWPORT
+    │   ├── CAMERA_POSITION
+    │   ├── CAMERA_FRUSTUM
+    │   ├── BOUNDING_BOX
+    │   ├── CENTER
+    │   └── RADIUS
+    │
+    ├── SPATIAL_LOD
+    │   ├── H3_RESOLUTION
+    │   ├── AGGREGATION_LEVEL
+    │   └── DETAIL_THRESHOLD
+    │
+    ├── TEMPORAL_CONTEXT
+    │   ├── VALID_TIME_RANGE
+    │   └── OBSERVATION_TIME_RANGE
+    │
+    ├── LAYER_CONFIGURATION
+    │   ├── ACTIVE_LAYERS
+    │   ├── SUPPRESSED_LAYERS
+    │   └── FILTERS
+    │
+    └── QUERY_POLICY
+        ├── ACCESS_SCOPE
+        ├── CONFIDENCE_THRESHOLD
+        └── EPISTEMIC_FILTER
+
+
+
+One architectural change I'd make
+
+
+Don't make Q ordinary world data.
+
+
+E, R, S, T, P, and Γ describe the world and NEXUS's knowledge of it.
+
+
+Q describes what the user is currently asking NEXUS to project.
+
+
+So conceptually:
+
+
+WORLD STATE
+(E, R, S, T, P, Γ)
+          │
+          ↓
+     QUERY CONTEXT Q
+          │
+          ↓
+   PROJECTION ENGINE
+          │
+     ┌────┼────┐
+     ↓    ↓    ↓
+   WebGL API Terminal Report
+
+
+
+That preserves your original renderer-independence principle.
+
+
+Phase 0 recommendation
+
+
+Don't attempt to ingest all of this immediately.
+
+
+Build the vertical slice around roughly:
+
+
+San Francisco → ~100 entities → 10–12 entity classes → 8–10 relationship types → bitemporal state → provenance → cryptographic hashes → confidence vector → query context.
+
+
+For the new domains, I'd specifically implement:
+
+
+
+
+One ecosystem
+
+
+Several species/populations
+
+
+A few legal instruments
+
+
+A small intellectual-property representation
+
+
+A network topology example
+
+
+Content hashes + digital signatures
+
+
+One ledger-anchor representation
+
+
+Viewport/H3/LOD query context
+
+
+
+
+That gives you something much more important than a huge static ontology: a demonstrable end-to-end chain from real-world entity → relationship → state → evidence → cryptographic verification → temporal history → spatial aggregation → user projection.
+
+
+And that is the point at which WORLD // NEXUS starts behaving like a genuine world-state engine, rather than simply being a very large database schema.
+
