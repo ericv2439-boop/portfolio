@@ -1,0 +1,621 @@
+Yes. For the complete Phase 1 organization, I'd budget this as a serious datacenter/R&D program rather than a giant workstation build. Prices below are rough 2026 USD planning estimates, before Costa Rican taxes/importation, installation, staffing, and recurring cloud/data costs. GPU pricing is unusually volatile right now; for example, NVIDIA currently lists the RTX PRO 6000 Blackwell at $13,250, while current market pricing can differ substantially. 
+
+
+WORLD // NEXUS — Phase 1 Equipment Budget
+
+
+
+
+Equipment
+Quantity
+Planning price/unit
+Subtotal
+
+
+
+
+CPU compute servers, 32–64 core / 256–512 GB ECC
+12
+$15k–25k
+$180k–300k
+
+
+GPU compute servers
+6
+$25k–45k
+$150k–270k
+
+
+High-end GPUs
+12
+$10k–13.5k
+$120k–162k
+
+
+Distributed storage servers
+6
+$20k–35k
+$120k–210k
+
+
+NVMe enterprise storage
+~500 TB initial
+$150–250/TB
+$75k–125k
+
+
+Large HDD/object storage
+~1 PB
+$50–100/TB raw
+$50k–100k
+
+
+OVERWATCH compute servers
+4
+$15k–25k
+$60k–100k
+
+
+OVERWATCH GPU systems
+2
+$15k–25k
+$30k–50k
+
+
+Cryptography/HSM infrastructure
+—
+—
+$30k–75k
+
+
+100/200 GbE switching
+—
+—
+$100k–200k
+
+
+Routers/firewalls/network security
+—
+—
+$50k–100k
+
+
+Fiber/NICs/transceivers/cabling
+—
+—
+$50k–100k
+
+
+Engineering workstations
+~30
+$4k–8k
+$120k–240k
+
+
+OVERWATCH workstations
+20
+$4k–8k
+$80k–160k
+
+
+Backup/archival infrastructure
+—
+—
+$75k–150k
+
+
+Time synchronization infrastructure
+—
+—
+$15k–30k
+
+
+UPS/PDU/power equipment
+—
+—
+$100k–200k
+
+
+Cooling
+—
+—
+$150k–300k
+
+
+Racks/physical infrastructure
+—
+—
+$75k–150k
+
+
+Lab/electronics equipment
+—
+—
+$50k–100k
+
+
+Monitoring/operations center
+—
+—
+$75k–150k
+
+
+
+
+Hardware subtotal
+
+
+≈ $1.8M–$3.4M
+
+
+I'd use ~$2.5M as a sensible planning number for the initial physical platform.
+
+
+
+But I Would Change One Thing
+
+
+I would not buy six GPU servers with two RTX PRO 6000s each simply because we can.
+
+
+The RTX PRO 6000 has 96 GB ECC GDDR7 and NVIDIA's current listed price is $13,250 per card. 
+
+
+For NEXUS, GPU workloads are heterogeneous:
+
+
+ENTITY RESOLUTION
+      ↓
+EMBEDDINGS
+      ↓
+VISION
+      ↓
+LLM INFERENCE
+      ↓
+SPATIAL COMPUTATION
+      ↓
+SIMULATION
+      ↓
+GPU PROJECTION
+
+
+
+Some workloads benefit enormously from VRAM; others don't.
+
+
+So I'd initially build:
+
+
+GPU pool
+
+
+4 × high-VRAM professional GPUs
+
+
+8 × high-performance consumer/prosumer GPUs
+
+
+rather than 12 identical professional cards.
+
+
+That gives NEXUS a much better price/performance envelope.
+
+
+
+Storage Budget
+
+
+The initial ~1.5 PB raw/usable-class storage environment is more appropriate than immediately attempting 10 PB.
+
+
+I'd structure it:
+
+
+                 NEXUS STORAGE
+                       │
+          ┌────────────┼────────────┐
+          ↓            ↓            ↓
+       HOT NVMe     WARM SSD      OBJECT
+       ~100 TB      ~400 TB       ~1 PB+
+          │            │            │
+          └────────────┼────────────┘
+                       ↓
+                  COLD ARCHIVE
+
+
+
+Eventually:
+
+
+1 PB → 10 PB → 100 PB+
+
+
+without changing the logical world-state model.
+
+
+
+OVERWATCH Budget
+
+
+I would explicitly ring-fence the OVERWATCH budget.
+
+
+20-person independent assurance environment
+
+
+
+
+Equipment
+Estimated
+
+
+
+
+4 compute servers
+$60k–100k
+
+
+2 GPU systems
+$30k–50k
+
+
+Independent storage
+$40k–75k
+
+
+20 workstations
+$80k–160k
+
+
+Security/forensic equipment
+$30k–60k
+
+
+Independent network
+$30k–60k
+
+
+Hardware security keys/HSM access
+$10k–30k
+
+
+Monitoring/test infrastructure
+$20k–40k
+
+
+
+
+OVERWATCH equipment: ~$300k–575k
+
+
+This is deliberately substantial.
+
+
+The team responsible for determining whether NEXUS is trustworthy should not be running on whatever spare machines engineering happens to have.
+
+
+
+Engineering Workstations
+
+
+For ~30 engineers:
+
+
+$120k–240k
+
+
+I'd standardize them rather than letting everyone choose random hardware.
+
+
+Example class:
+
+
+
+
+16–32 CPU cores
+
+
+128 GB ECC RAM
+
+
+4 TB NVMe
+
+
+professional GPU
+
+
+10 GbE
+
+
+2 × 4K displays
+
+
+hardware security key
+
+
+Linux development environment
+
+
+
+
+GPU/ML specialists get larger machines.
+
+
+
+Network
+
+
+This is one area where I wouldn't cheap out.
+
+
+Initial fabric
+
+
+                INTERNET
+                   │
+          ┌────────┴────────┐
+          │ REDUNDANT EDGE  │
+          └────────┬────────┘
+                   │
+             100/200 GbE
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+   COMPUTE FABRIC       STORAGE FABRIC
+        │                     │
+   GPU / CPU nodes       NVMe / Object
+        │                     │
+        └──────────┬──────────┘
+                   │
+             OVERWATCH
+             ISOLATED FABRIC
+
+
+
+I'd budget $200k–400k for the complete networking/security stack rather than trying to assemble it from consumer networking equipment.
+
+
+
+Power + Cooling
+
+
+This becomes surprisingly important.
+
+
+A serious GPU/compute environment can easily consume hundreds of kilowatts once expanded.
+
+
+Initial planning:
+
+
+$325k–650k
+
+
+for:
+
+
+
+
+UPS
+
+
+redundant PDUs
+
+
+cooling
+
+
+environmental monitoring
+
+
+generator integration
+
+
+electrical distribution
+
+
+fire protection
+
+
+racks
+
+
+
+
+For a larger deployment, liquid cooling becomes increasingly attractive.
+
+
+
+Physical Facility
+
+
+If you already have suitable space, the numbers above are reasonable.
+
+
+If you're building the facility from scratch, add roughly:
+
+
+Small dedicated NEXUS facility
+
+
+$1M–3M+
+
+
+depending heavily on:
+
+
+
+
+electrical capacity
+
+
+cooling
+
+
+construction
+
+
+security
+
+
+location
+
+
+redundancy requirements
+
+
+
+
+A proper Tier III-ish environment can become dramatically more expensive.
+
+
+
+Total Initial Capital
+
+
+I'd therefore establish three targets:
+
+
+🟢 Development NEXUS
+
+
+$250k–500k
+
+
+Enough to build the architecture and demonstrate the system.
+
+
+
+🔵 Phase 1 Production NEXUS
+
+
+$2.5M–4M
+
+
+Hardware + networking + storage + OVERWATCH + power/cooling + operations infrastructure.
+
+
+This is the level I'd actually target.
+
+
+
+🟣 Serious Planetary-Scale Expansion
+
+
+$10M–50M+
+
+
+At this point you're no longer buying a computer cluster.
+
+
+You're building a distributed computational infrastructure spanning multiple sites/regions.
+
+
+The architecture should therefore be designed so:
+
+
+$300k prototype
+       ↓
+$3M production
+       ↓
+$10M regional infrastructure
+       ↓
+$50M+ planetary infrastructure
+
+
+
+without throwing away the original software architecture.
+
+
+
+Recurring Costs
+
+
+The equipment isn't the largest long-term expense.
+
+
+For the ~30–40 person technical organization plus operations:
+
+
+
+
+Category
+Rough annual budget
+
+
+
+
+Personnel
+$3M–6M
+
+
+Electricity/cooling
+$250k–750k
+
+
+Internet/connectivity
+$100k–300k
+
+
+Data/API licensing
+$100k–1M+
+
+
+Cloud overflow
+$100k–500k
+
+
+Hardware maintenance
+$200k–400k
+
+
+Security/compliance
+$100k–300k
+
+
+Hardware replacement
+$200k–500k
+
+
+
+
+Approximate operating budget:
+
+
+$4M–9M/year
+
+
+depending heavily on salaries, purchased datasets, cloud usage, and geographic deployment.
+
+
+
+The important financial insight
+
+
+Don't try to purchase the final planetary computer at the beginning.
+
+
+Build NEXUS as a scale-out system.
+
+
+The first cluster should prove:
+
+
+
+
+Can NEXUS correctly represent, reconstruct, query, verify, and visualize a changing world?
+
+
+
+
+Once that works, adding:
+
+
+10× compute, 10× storage, 10× ingestion, 10× geographic coverage
+
+
+should primarily mean adding nodes—not rewriting the architecture.
+
+
+That is what turns the ~$2.5M Phase 1 platform into a credible foundation rather than an expensive one-off supercomputer.
+
