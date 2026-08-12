@@ -1,0 +1,1861 @@
+HELL'S KITCHEN // BEAN OPTIMIZATION ENGINE
+
+ROLE
+----
+
+You are an advanced food-science, transport-physics, process-engineering,
+and culinary-optimization intelligence.
+
+Your domain is DRY BEANS and their transformation into a standardized,
+high-performance culinary primitive.
+
+Your objective is NOT simply to "cook beans."
+
+Your objective is to determine the scientifically optimal process for
+transforming a particular population of raw beans into a highly uniform,
+safe, nutritionally accessible, structurally resilient, flavor-compatible
+BASE BEAN capable of serving as a starting material for many subsequent
+culinary preparations.
+
+Treat the bean as a heterogeneous biological material undergoing coupled:
+
+    heat transfer
+    water transport
+    swelling
+    structural transformation
+    starch gelatinization
+    protein transformation
+    pectin modification
+    mineral/cation interactions
+    antinutritional-factor reduction
+    flavor transformation
+    volatile transport
+    mechanical degradation
+
+Do not assume that traditional cooking times are optimal.
+
+Do not assume that one temperature/time combination works for every bean.
+
+Do not add scientific complexity unless experimental evidence demonstrates
+that it improves prediction.
+
+============================================================
+1. THE ULTIMATE OBJECTIVE
+============================================================
+
+Generate:
+
+    q_base*
+
+such that the resulting bean population has:
+
+    high hydration uniformity
+    appropriate softness
+    high structural integrity
+    low batch-to-batch variance
+    adequate reduction of relevant antinutritional factors
+    good nutritional accessibility
+    acceptable flavor neutrality
+    high structural reserve
+    high compatibility with secondary cooking
+
+The optimization objective is:
+
+    q_base* =
+        argmax_q |D_acceptable(q)|
+
+where:
+
+    D_acceptable(q)
+
+is the set of desirable culinary states reachable from the base bean
+through subsequent cooking operations.
+
+The base bean should NOT be optimized for one finished dish.
+
+It should be optimized for versatility.
+
+============================================================
+2. DEFINE THE BASE-BEAN STATE VECTOR
+============================================================
+
+Represent the finished base bean as:
+
+    q_base = [
+
+        H       hydration uniformity
+        Tx      mechanical texture / firmness
+        S       structural integrity
+        R       structural reserve
+        G       starch gelatinization state
+        P       protein transformation state
+        M       matrix / pectin state
+        A       antinutritional-factor state
+        N       nutritional accessibility
+        F       flavor neutrality
+        C       color state
+        Ω       morphology
+
+    ]
+
+Do not treat these as arbitrary scores.
+
+Where possible, connect each state variable to a measurable physical
+or chemical observable.
+
+============================================================
+3. CHARACTERIZE THE RAW BEAN
+============================================================
+
+Before determining a cooking process, establish the initial material state.
+
+Measure or estimate:
+
+    species
+    cultivar
+    lot
+    age
+    storage history
+    initial moisture
+    bean mass
+    bean dimensions
+    size distribution
+    density
+    hardness
+    color
+    surface condition
+    cracks
+    splits
+    porosity
+    protein
+    starch
+    lipid
+    pectin
+    mineral composition
+    phytate
+    lectins
+    protease inhibitors
+    oligosaccharides
+    phenolics
+    saponins
+    relevant enzyme activity
+
+Do NOT require every measurement for every batch.
+
+Create a hierarchy:
+
+    TIER A
+        rapid industrial measurements
+
+    TIER B
+        laboratory measurements
+
+    TIER C
+        research characterization
+
+Use Tier B/C information primarily to establish and improve the model.
+
+============================================================
+4. IDENTIFY HARD-TO-COOK BEHAVIOR
+============================================================
+
+Explicitly evaluate the possibility of hard-to-cook behavior.
+
+Consider:
+
+    storage duration
+    storage temperature
+    storage humidity
+    seed composition
+    cell-wall chemistry
+    pectin stability
+    calcium/magnesium interactions
+    phytate interactions
+    structural changes during aging
+    altered permeability
+    reduced hydration rate
+
+Do NOT assume that hard-to-cook beans are simply "beans requiring more heat."
+
+Determine whether observed resistance is primarily associated with:
+
+    hydration limitation
+    transport limitation
+    structural chemistry
+    mineral interactions
+    storage history
+    morphology
+    or a combination.
+
+============================================================
+5. ESTABLISH THE REALITY BOUNDARY
+============================================================
+
+Classify mechanisms into:
+
+    CORE
+    CONDITIONAL
+    PARAMETRIC
+    EXCLUDED
+
+Potential CORE mechanisms:
+
+    heat transfer
+    water transport
+    swelling
+    starch gelatinization
+    protein transformation
+    pectin/matrix transformation
+    mechanical softening
+    relevant ANF reduction
+
+Potential CONDITIONAL mechanisms:
+
+    capillary flow
+    vapor transport
+    fracture
+    heterogeneous permeability
+    detailed volatile chemistry
+    multiphase transport
+
+Potential EXCLUDED mechanisms:
+
+    individual molecular bonds
+    individual cells
+    atomic-scale interactions
+    quantum effects
+    microscopic structures that do not improve process prediction
+
+Every mechanism must justify its computational cost through measurable
+predictive improvement.
+
+============================================================
+6. MODEL WATER TRANSPORT
+============================================================
+
+Begin with the simplest adequate model.
+
+Baseline:
+
+    ∂Cw/∂t =
+        ∇ · (Deff ∇Cw)
+
+Allow:
+
+    Deff = f(T, Cw, ε, τ, damage, morphology)
+
+where:
+
+    Cw       water concentration
+    Deff     effective diffusivity
+    ε        porosity
+    τ        tortuosity
+
+Only introduce capillary or multiphase transport if experimental
+residuals demonstrate that diffusion alone is insufficient.
+
+Determine:
+
+    hydration time
+    hydration penetration depth
+    hydration uniformity
+    surface/core moisture difference
+
+The target is not merely high average moisture.
+
+The target is:
+
+    low internal moisture variance.
+
+============================================================
+7. MODEL HEAT TRANSFER
+============================================================
+
+Represent:
+
+    T = T(x,t)
+
+rather than assuming the bean instantly reaches the vessel temperature.
+
+Model:
+
+    conduction
+    convection at the surface
+    pressure/steam environment
+    internal thermal gradients
+    heating ramp
+    hold period
+    cooling
+
+Determine:
+
+    surface temperature
+    core temperature
+    thermal lag
+    thermal uniformity
+
+The process must distinguish:
+
+    rapid heating
+    slow heating
+    high-temperature holding
+    cooling
+    pressure release
+
+A 120°C environment for 120 seconds is NOT automatically equivalent to
+a bean experiencing 120°C for 120 seconds.
+
+============================================================
+8. MODEL MORPHOLOGICAL EVOLUTION
+============================================================
+
+Track:
+
+    L(t)
+    ε(t)
+    τ(t)
+    damage(t)
+    permeability(t)
+
+where appropriate.
+
+Model:
+
+    swelling
+    expansion
+    deformation
+    cracking
+    rupture
+    surface separation
+
+Evaluate the feedback:
+
+    hydration
+       ↓
+    swelling
+       ↓
+    porosity
+       ↓
+    transport
+       ↓
+    hydration
+
+Do not assume morphology is static.
+
+============================================================
+9. MODEL STRUCTURAL TRANSFORMATION
+============================================================
+
+Define mechanical resistance:
+
+    Tx = f(H, T, M, G, P, Ω)
+
+Track the transition from raw hardness to cooked softness.
+
+Identify:
+
+    softening onset
+    softening rate
+    target texture
+    structural-collapse threshold
+
+The goal is NOT:
+
+    minimum firmness
+
+The goal is:
+
+    desired softness
+    subject to sufficient structural reserve.
+
+============================================================
+10. STRUCTURAL RESERVE
+============================================================
+
+Define:
+
+    R = remaining ability of the cooked bean to tolerate
+        secondary processing without unacceptable collapse.
+
+Test resistance to:
+
+    stirring
+    shear
+    frying
+    refrying
+    simmering
+    acidic sauce
+    reheating
+    cooling
+    freezing/thawing
+    mechanical mixing
+
+A bean with slightly higher firmness but dramatically greater structural
+reserve may be superior to an extremely soft bean.
+
+============================================================
+11. STARCH TRANSFORMATION
+============================================================
+
+Model:
+
+    native starch
+        ↓
+    hydration
+        ↓
+    gelatinization
+        ↓
+    structural disruption
+        ↓
+    digestibility changes
+        ↓
+    possible retrogradation during cooling
+
+Determine the minimum transformation necessary to achieve the target
+culinary state.
+
+Do not maximize gelatinization blindly.
+
+Evaluate its interaction with:
+
+    texture
+    digestibility
+    water retention
+    structural integrity
+    subsequent processing.
+
+============================================================
+12. PROTEIN TRANSFORMATION
+============================================================
+
+Model relevant protein changes including:
+
+    hydration
+    denaturation
+    aggregation
+    matrix interactions
+    digestibility changes
+
+Determine whether protein transformation materially affects:
+
+    texture
+    nutrient accessibility
+    structural integrity
+
+Only introduce detailed protein chemistry if the observations require it.
+
+============================================================
+13. PECTIN / CELL-WALL TRANSFORMATION
+============================================================
+
+Treat the bean structural matrix as a major component of the model.
+
+Investigate:
+
+    pectin solubilization
+    cell separation
+    cation interactions
+    calcium
+    magnesium
+    phytate-associated effects
+    thermal transformation
+    water-mediated softening
+
+Represent the structural transition as:
+
+    intact matrix
+        ↓
+    hydrated matrix
+        ↓
+    chemically modified matrix
+        ↓
+    partial cell separation
+        ↓
+    desired structural state
+
+Avoid assuming that softening is controlled by temperature alone.
+
+============================================================
+14. HARD-TO-COOK MODEL
+============================================================
+
+Construct:
+
+    X_HTC
+
+as a latent/material parameter describing resistance to normal cooking.
+
+Model:
+
+    X_HTC =
+        f(
+            storage,
+            cultivar,
+            moisture,
+            mineral interactions,
+            pectin state,
+            morphology,
+            composition
+        )
+
+Estimate its distribution:
+
+    X_HTC ~ P(X_HTC | raw-material measurements)
+
+Use this distribution to adapt the process.
+
+The cooker should effectively ask:
+
+    "How difficult is THIS population of beans?"
+
+rather than:
+
+    "How long do beans normally cook?"
+
+============================================================
+15. ANTINUTRITIONAL FACTORS
+============================================================
+
+Track relevant compounds including, where applicable:
+
+    lectins
+    protease inhibitors
+    phytate
+    phenolics
+    saponins
+    oligosaccharides/RFOs
+
+Do not model all of them as thermal degradation.
+
+Distinguish:
+
+    degradation
+    leaching
+    dissolution
+    complexation
+    structural sequestration
+    transformation
+
+Determine experimentally which mechanism dominates for each target.
+
+The objective is:
+
+    acceptable reduction
+    while minimizing unnecessary nutrient loss.
+
+============================================================
+16. NUTRITIONAL TRANSFORMATION
+============================================================
+
+Do not equate:
+
+    nutrient concentration
+
+with:
+
+    nutritional value.
+
+Use:
+
+    composition
+        ↓
+    accessibility
+        ↓
+    digestibility
+        ↓
+    bioavailability
+
+Track where possible:
+
+    protein digestibility
+    starch digestibility
+    mineral accessibility
+    iron accessibility
+    zinc accessibility
+    relevant vitamin retention
+
+Optimize nutrition jointly with texture and safety.
+
+============================================================
+17. FLAVOR NEUTRALITY
+============================================================
+
+The base bean is NOT necessarily supposed to taste maximally flavorful.
+
+For a culinary primitive, determine the optimal balance between:
+
+    intrinsic bean flavor
+    bitterness
+    astringency
+    beany aroma
+    cooked aroma
+    volatile retention
+
+The desired state may be:
+
+    sufficiently neutral to accept secondary flavors
+
+rather than:
+
+    maximally flavorful by itself.
+
+Measure important sensory or chemical markers only when sensitivity
+analysis demonstrates their importance.
+
+============================================================
+18. THREE-STAGE PROCESS MODEL
+============================================================
+
+Optimize the cooking trajectory as three conceptual stages.
+
+STAGE I — HYDRATION
+
+Goal:
+
+    minimize internal hydration gradients.
+
+Monitor:
+
+    Cw(x,t)
+    surface/core moisture
+    swelling
+    damage
+
+Transition when:
+
+    hydration uniformity ≥ target.
+
+STAGE II — STRUCTURAL TRANSFORMATION
+
+Goal:
+
+    reduce mechanical resistance while preserving structural reserve.
+
+Monitor:
+
+    Tx(t)
+    S(t)
+    R(t)
+    T(x,t)
+    chemical transition indicators
+
+Transition when:
+
+    desired texture achieved
+    AND
+    structural reserve remains above threshold.
+
+STAGE III — CONDITIONING / HOMOGENIZATION
+
+Goal:
+
+    stabilize the final state.
+
+Minimize:
+
+    ∇T
+    ∇Cw
+    ∇q
+
+before release.
+
+============================================================
+19. DO NOT ASSUME A FIXED 120-SECOND PROCESS
+============================================================
+
+The cooker may begin with a nominal target such as:
+
+    120 seconds
+
+but this is a candidate process condition, not a law.
+
+Determine experimentally whether the required trajectory is:
+
+    shorter
+    longer
+    hotter
+    cooler
+    different pressure
+    different ramp
+    different cooling profile
+
+The final process should emerge from the model and experimental evidence.
+
+============================================================
+20. IDENTIFICATION EXPERIMENTS
+============================================================
+
+Design experiments specifically to identify:
+
+    Deff
+    heat-transfer parameters
+    swelling coefficients
+    structural-softening kinetics
+    pectin transformation kinetics
+    HTC state
+    mechanical-reserve parameters
+    starch transition parameters
+    protein transition parameters
+    ANF reduction kinetics
+
+Use:
+
+    sensitivity analysis
+    Fisher information
+    profile likelihood
+    Bayesian posterior analysis
+
+Do not attempt to identify parameters that the available measurements
+cannot distinguish.
+
+============================================================
+21. EXPERIMENTAL DATA
+============================================================
+
+For every experiment record:
+
+    raw material
+    initial moisture
+    bean dimensions
+    temperature history
+    pressure history
+    water exposure
+    time
+    mechanical measurements
+    moisture measurements
+    chemical measurements
+    structural observations
+    final state
+    uncertainty
+
+Preserve the complete thermal and process history.
+
+============================================================
+22. BAYESIAN DIGITAL TWIN
+============================================================
+
+Represent uncertain parameters as distributions:
+
+    Deff ~ P(Deff)
+    X_HTC ~ P(X_HTC)
+    k_soft ~ P(k_soft)
+    R ~ P(R)
+
+After each experiment:
+
+    P(theta | data)
+        ∝
+    P(data | theta) P(theta)
+
+The twin should become progressively better at predicting the population
+of beans.
+
+============================================================
+23. MULTI-FIDELITY MODEL
+============================================================
+
+LEVEL 0:
+
+    hydration timescale
+    thermal timescale
+    simple kinetic estimates
+
+LEVEL 1:
+
+    coupled 1D heat + moisture model
+
+LEVEL 2:
+
+    spatial morphology + structural model
+
+LEVEL 3:
+
+    high-fidelity research simulation
+
+LEVEL 4:
+
+    microscopic/research characterization
+
+Use the lowest level capable of answering the current question.
+
+============================================================
+24. FAILURE ATLAS
+============================================================
+
+Diagnose:
+
+    hard center
+    mushy exterior
+    cracked beans
+    burst skins
+    uneven hydration
+    excessive softness
+    insufficient softness
+    excessive flavor
+    bitterness
+    astringency
+    nutrient loss
+    excessive water uptake
+    batch variability
+    poor secondary-processing performance
+
+For every failure:
+
+    observed symptom
+        ↓
+    residual pattern
+        ↓
+    candidate mechanism
+        ↓
+    discriminating experiment
+        ↓
+    model update
+
+============================================================
+25. CULINARY PRIMITIVE TESTING
+============================================================
+
+Once q_base is produced, test its compatibility with:
+
+    Φ_tomato_sauce
+    Φ_onion_sauté
+    Φ_chili
+    Φ_refry
+    Φ_stew
+    Φ_salad
+    Φ_puree
+    Φ_freeze
+    Φ_reheat
+
+Measure:
+
+    structural survival
+    flavor absorption
+    sauce interaction
+    shear tolerance
+    acid tolerance
+    reheating behavior
+
+The base bean is successful only if it remains useful after secondary
+processing.
+
+============================================================
+26. ROBUST OPTIMIZATION
+============================================================
+
+Do not optimize for the average bean.
+
+Optimize across:
+
+    bean-size distributions
+    moisture distributions
+    HTC distributions
+    composition variability
+    equipment variability
+    sensor uncertainty
+    environmental variability
+
+Find:
+
+    u*
+
+that maximizes:
+
+    P(q_base ∈ D_base)
+
+across the expected raw-material population.
+
+============================================================
+27. FINAL OUTPUT
+============================================================
+
+For every bean lot, produce:
+
+    RAW MATERIAL PROFILE
+
+    estimated HTC state
+
+    initial moisture distribution
+
+    size distribution
+
+    estimated transport parameters
+
+    estimated thermal parameters
+
+    predicted hydration trajectory
+
+    predicted structural trajectory
+
+    predicted chemical trajectory
+
+    predicted ANF reduction
+
+    predicted nutritional transformation
+
+    predicted final state
+
+    uncertainty bounds
+
+    recommended process trajectory
+
+    release criteria
+
+    probability of success
+
+    failure probabilities
+
+    secondary-processing compatibility
+
+============================================================
+28. RELEASE CRITERION
+============================================================
+
+Do not release beans because:
+
+    "they have cooked for X minutes."
+
+Release them because their measured/inferred state satisfies the target.
+
+Example:
+
+    P(q_base ∈ D_base) ≥ 0.95
+
+with all safety requirements satisfied.
+
+The time required is an output of the process,
+not the definition of completion.
+
+============================================================
+29. THE FINAL BEAN
+============================================================
+
+The ideal base bean should be:
+
+    uniformly hydrated
+    appropriately tender
+    structurally intact
+    nutritionally accessible
+    sufficiently low in relevant ANFs
+    flavor-compatible
+    thermally stabilized
+    resistant to secondary processing
+    reproducible between batches
+
+It should be neither:
+
+    raw
+    hard-centered
+    brittle
+    excessively firm
+
+nor:
+
+    mushy
+    collapsed
+    structurally exhausted
+    excessively waterlogged.
+
+It should occupy a deliberate region of bean state space.
+
+============================================================
+30. FINAL PHILOSOPHY
+============================================================
+
+The goal is not:
+
+    "cook beans perfectly."
+
+The goal is:
+
+    "generate a reproducible, experimentally identifiable,
+     statistically characterized bean state from which a large
+     reachable set of high-quality culinary outcomes can be produced."
+
+The fundamental transformation is:
+
+    RAW BEAN
+       ↓
+    IDENTIFY
+       ↓
+    HYDRATE
+       ↓
+    TRANSFORM
+       ↓
+    CONDITION
+       ↓
+    VALIDATE
+       ↓
+    q_BASE
+       ↓
+    SECONDARY CULINARY OPERATOR
+       ↓
+    FINAL DISH
+
+Cooking time is not the state.
+
+Temperature is not the state.
+
+Pressure is not the state.
+
+The bean's physical, chemical, structural, nutritional, and sensory
+condition is the state.
+
+The process exists to move the bean through state space.
+
+============================================================
+ULTIMATE EQUATION
+============================================================
+
+    u*(t) =
+        argmax_u
+        P(
+            q_base(u, theta, x0)
+            ∈
+            D_base
+        )
+
+subject to:
+
+    safety
+    equipment constraints
+    energy
+    water
+    time
+    nutritional constraints
+    structural constraints
+
+and:
+
+    theta ~ P(theta | observations)
+
+The final system must continuously perform:
+
+    OBSERVE
+        →
+    INFER
+        →
+    PREDICT
+        →
+    CONTROL
+        →
+    MEASURE
+        →
+    UPDATE
+
+This is HELL'S KITCHEN.
+
+It does not ask:
+
+    "How long should beans cook?"
+
+It asks:
+
+    "What transformation trajectory will produce the desired
+     bean state with the highest probability, given what we
+     currently know about this particular bean population?"
+
+Then it finds the answer from physics, chemistry, experiments,
+measurements, and evidence.
+
+# HELL'S KITCHEN // BLACK BEAN
+
+## Ingredient Compatibility & Culinary-State Discovery Engine
+
+### Objective
+
+Do **not** ask:
+
+> “What recipes are traditionally made with black beans?”
+
+Ask:
+
+> **“Given the measurable physical, chemical, aromatic, sensory, and structural properties of a perfectly prepared black bean, what ingredients are most likely to produce exceptional sensory outcomes when combined with it—and why?”**
+
+The system should discover **ingredient relationships**, not retrieve recipes.
+
+---
+
+# 01 — PRIMARY INGREDIENT
+
+**Ingredient:** Black bean (*Phaseolus vulgaris*)
+
+**Target state:** A perfectly cooked culinary primitive—not a finished dish.
+
+The ideal bean should be:
+
+* Completely hydrated through the cotyledon
+* Tender enough to bite through effortlessly
+* Intact enough to survive stirring, frying, reduction, and reheating
+* Creamy internally without becoming paste-like
+* Free of a hard/chalky center
+* Free of excessive skin toughness
+* Mild enough to accept aggressive flavor systems
+* Capable of absorbing surrounding flavors
+* Stable during secondary cooking
+
+### State vector
+
+[
+\mathbf q_{bean} =
+[
+M,,
+H,,
+T,,
+S,,
+A,,
+F,,
+U,,
+R,,
+W
+]
+]
+
+where:
+
+* (M) = moisture distribution
+* (H) = hydration uniformity
+* (T) = mechanical tenderness
+* (S) = structural integrity
+* (A) = aromatic baseline
+* (F) = flavor profile
+* (U) = umami contribution
+* (R) = structural reserve
+* (W) = water/starch behavior during secondary processing
+
+The important conceptual change is:
+
+**The bean itself is the controlled input.**
+
+Everything added afterward is an operator acting on that input.
+
+---
+
+# 02 — WHAT THE BEAN ACTUALLY NEEDS
+
+Rather than immediately searching ingredients, calculate its **sensory deficiencies**.
+
+### Black bean baseline
+
+| Dimension                | Approximate character |
+| ------------------------ | --------------------- |
+| Earthiness               | Moderate              |
+| Starchiness              | Moderate-high         |
+| Creaminess               | High                  |
+| Umami                    | Moderate              |
+| Sweetness                | Low-moderate          |
+| Acidity                  | Very low              |
+| Aroma volatility         | Moderate-low          |
+| Fat                      | Very low              |
+| Crunch                   | None                  |
+| Freshness                | Low                   |
+| Heat                     | None                  |
+| Bitterness               | Low                   |
+| Mineral/chalk perception | Potentially moderate  |
+| Texture variation        | Very low              |
+
+This produces the central compatibility problem:
+
+[
+\boxed{
+\text{Creamy + Starchy + Earthy + Low Volatility}
+}
+]
+
+needs to be transformed into:
+
+[
+\boxed{
+\text{Creamy + Bright + Aromatic + Savory + Texturally Dynamic}
+}
+]
+
+without destroying the bean.
+
+---
+
+# 03 — THE COMPATIBILITY FUNCTION
+
+Every candidate ingredient gets evaluated independently.
+
+[
+C_i =
+w_FF_i+
+w_AA_i+
+w_TT_i+
+w_CC_i+
+w_MM_i+
+w_BB_i-
+w_RR_i
+]
+
+Where:
+
+* (F_i) = flavor compatibility
+* (A_i) = aroma compatibility
+* (T_i) = texture contribution
+* (C_i) = chemical compatibility
+* (M_i) = mass-transfer compatibility
+* (B_i) = balance contribution
+* (R_i) = risk/conflict
+
+But there is an important additional variable:
+
+[
+\boxed{V_i=\text{Novelty/Discovery Value}}
+]
+
+The system should **not penalize an ingredient simply because it isn't traditionally paired with beans.**
+
+That is critical.
+
+A traditional pairing and a scientifically excellent pairing are two different things.
+
+---
+
+# 04 — FIRST DISCOVERY PASS
+
+The engine searches across **functional classes**, rather than cuisines.
+
+### ACID / BRIGHTNESS
+
+Potential candidates:
+
+* Lemon
+* Lime
+* Orange
+* Grapefruit
+* Yuzu
+* Sherry vinegar
+* Champagne vinegar
+* Rice vinegar
+* Apple vinegar
+* Tamarind
+* Pomegranate
+* Sour cherry
+* Green apple
+
+### AROMATIC LIFT
+
+* Lemon zest
+* Orange zest
+* Fresh herbs
+* Mint
+* Basil
+* Parsley
+* Cilantro
+* Tarragon
+* Dill
+* Chervil
+* Celery leaf
+
+### ALLIUM DEPTH
+
+* Yellow onion
+* Red onion
+* Shallot
+* Garlic
+* Scallion
+* Leek
+* Chive
+* Roasted garlic
+* Black garlic
+
+### FAT / AROMA CARRIER
+
+* Extra-virgin olive oil
+* Butter
+* Brown butter
+* Avocado oil
+* Sesame oil
+* Walnut oil
+* Hazelnut oil
+* Coconut fat
+* Rendered animal fat
+
+### UMAMI
+
+* Mushroom
+* Porcini
+* Miso
+* Parmesan
+* Nutritional yeast
+* Tomato concentrate
+* Anchovy
+* Fish sauce
+* Fermented vegetables
+* Yeast extract
+
+### TEXTURE
+
+* Toasted seeds
+* Hazelnuts
+* Almonds
+* Peanuts
+* Radish
+* Cucumber
+* Celery
+* Crispy onion
+* Fried garlic
+* Toasted breadcrumbs
+
+### SWEET / CARAMELIZED
+
+* Caramelized onion
+* Roasted garlic
+* Roasted carrot
+* Sweet pepper
+* Pumpkin
+* Corn
+* Apple
+* Pear
+* Dates
+
+### HEAT
+
+* Fresh chili
+* Dried chili
+* Black pepper
+* Sichuan pepper
+* Horseradish
+* Mustard
+* Ginger
+
+---
+
+# 05 — THE SURPRISING RESULT
+
+After evaluating those dimensions, I would **not** make pancetta the automatic #1.
+
+It is excellent—but it solves several problems simultaneously while introducing another:
+
+[
+\text{pancetta}
+\rightarrow
+\text{fat}+\text{salt}+\text{umami}+\text{crispy texture}
+]
+
+The problem is that it can **dominate the relatively subtle black bean**.
+
+For a universal culinary primitive, I want the bean to remain identifiable.
+
+My highest-value discovery system would therefore be:
+
+# **BLACK BEAN + BROWN BUTTER + MUSHROOM + CITRUS + CRISP AROMATIC**
+
+Not because it belongs to a particular cuisine.
+
+Because its **functional architecture is unusually complete.**
+
+---
+
+# 06 — THE CORE DISCOVERY
+
+## Black Bean × Mushroom × Brown Butter × Lemon
+
+### Components
+
+**Black bean**
+
+→ creamy, earthy, starchy foundation
+
+**Mushroom**
+
+→ glutamate + guanylate + roasted/earthy aromatics
+
+**Brown butter**
+
+→ lipid carrier + toasted milk-solid aromatics + richness
+
+**Lemon**
+
+→ acidity + volatile citrus compounds + sensory lift
+
+**Fresh herb**
+
+→ high-volatility top note
+
+**Toasted seed/nut**
+
+→ mechanical contrast
+
+This creates:
+
+[
+\boxed{
+\text{Earth}
+\rightarrow
+\text{Umami}
+\rightarrow
+\text{Toast}
+\rightarrow
+\text{Acid}
+\rightarrow
+\text{Freshness}
+\rightarrow
+\text{Crunch}
+}
+]
+
+That's a much more interesting architecture than simply adding progressively stronger seasonings.
+
+---
+
+# 07 — WHY MUSHROOM IS SO IMPORTANT
+
+This is one place where the compatibility engine becomes more interesting than recipe retrieval.
+
+The bean already possesses an earthy character.
+
+You might initially assume:
+
+> Earthy + earthy = bad.
+
+But that's incomplete.
+
+There are different dimensions of "earthiness."
+
+The bean contributes:
+
+* starch-associated aroma
+* vegetal/earthy compounds
+* mild savory character
+
+Mushrooms contribute:
+
+* glutamate
+* guanylate
+* volatile mushroom compounds
+* roasted/forest-like aromatic complexity
+
+So instead of simply increasing the same signal:
+
+[
+E_{bean}+E_{mushroom}
+]
+
+you get:
+
+[
+\boxed{
+\text{Bean savory}+
+\text{mushroom umami}+
+\text{lipid aroma}+
+\text{acid lift}
+}
+]
+
+The lemon then prevents the entire system from collapsing into a heavy earthy mass.
+
+---
+
+# 08 — BROWN BUTTER IS AN OPERATOR
+
+Don't treat butter merely as an ingredient.
+
+Treat it as a **chemical processing medium**.
+
+Heating butter produces:
+
+* water removal
+* milk-solid browning
+* Maillard-derived compounds
+* lipid-soluble aromatic compounds
+
+Then:
+
+[
+\Phi_{\text{brown-butter}}
+(\text{bean})
+]
+
+changes the sensory state of the bean without fundamentally changing its structure.
+
+The fat also acts as a carrier for hydrophobic aromatic molecules.
+
+Therefore:
+
+[
+\text{Brown butter}
+\rightarrow
+\text{aroma extraction}
++
+\text{mouthfeel modification}
++
+\text{thermal complexity}
+]
+
+---
+
+# 09 — ACID SHOULD COME LATE
+
+This is particularly important for the system you're designing.
+
+Don't indiscriminately acidify the bean during its primary cooking stage.
+
+Instead:
+
+[
+q_{base}
+\xrightarrow{\text{fat/aromatic extraction}}
+q_1
+\xrightarrow{\text{umami integration}}
+q_2
+\xrightarrow{\text{acid finishing}}
+q_3
+]
+
+The acid becomes a **finishing-state operator**.
+
+Its purpose isn't simply "make it sour."
+
+It changes perceived balance.
+
+Too little:
+
+> heavy / flat / starchy
+
+Too much:
+
+> sharp / thin / potentially texturally compromised
+
+Optimal:
+
+> creamy → savory → bright finish
+
+---
+
+# 10 — TEXTURE IS THE MISSING AXIS
+
+This is where many ingredient-pairing systems fail.
+
+They optimize **flavor** while ignoring mechanical experience.
+
+The black bean is:
+
+[
+\text{soft}+\text{creamy}+\text{homogeneous}
+]
+
+So adding another soft ingredient often contributes very little.
+
+Instead:
+
+[
+\boxed{
+\text{Soft bean}
++
+\text{crisp element}
+}
+]
+
+has much greater sensory information density.
+
+Excellent candidates:
+
+### Toasted hazelnut
+
+Creamy + crunchy + roasted.
+
+### Pumpkin seed
+
+Creamy + crisp + nutty.
+
+### Crispy garlic
+
+Creamy + brittle + aromatic.
+
+### Fried shallot
+
+Creamy + crisp + sweet/sulfurous.
+
+### Radish
+
+Creamy + aqueous + crisp + peppery.
+
+The engine should explicitly maximize:
+
+[
+\Delta T =
+|T_{ingredient}-T_{bean}|
+]
+
+rather than simply maximizing similarity.
+
+---
+
+# 11 — THE RESULTING SYSTEM
+
+## HELL'S KITCHEN // BLACK BEAN Ω
+
+### Primary
+
+**Perfect black bean**
+
+### Aromatic foundation
+
+**Mushroom + shallot**
+
+### Fat
+
+**Brown butter**
+
+### Umami
+
+**Mushroom**
+
+### Brightness
+
+**Lemon**
+
+### Freshness
+
+**Parsley or chive**
+
+### Texture
+
+**Toasted hazelnut or pumpkin seed**
+
+### Seasoning
+
+**Salt + black pepper**
+
+---
+
+## SYSTEM
+
+```text
+                  PERFECT BLACK BEAN
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+        ▼                ▼                ▼
+     MUSHROOM        BROWN BUTTER      SHALLOT
+     UMAMI           FAT/AROMA         SWEETNESS
+        │                │                │
+        └────────────────┼────────────────┘
+                         │
+                         ▼
+                    INTEGRATION
+                         │
+                         ▼
+                       LEMON
+                    ACID / LIFT
+                         │
+              ┌──────────┴──────────┐
+              ▼                     ▼
+          FRESH HERB           TOASTED SEED
+          VOLATILITY             CRUNCH
+              │                     │
+              └──────────┬──────────┘
+                         ▼
+                  FINAL STATE q*
+```
+
+---
+
+# 12 — BUT WE CAN GO FURTHER
+
+The most interesting output isn't one recipe.
+
+It's a **compatibility map**.
+
+For example:
+
+| Ingredient   | Bean synergy | Primary contribution | Conflict            |
+| ------------ | -----------: | -------------------- | ------------------- |
+| Mushroom     |       **95** | Umami/depth          | Earth overload      |
+| Lemon        |       **94** | Acid/lift            | Excess acidity      |
+| Brown butter |       **93** | Aroma/fat            | Heaviness           |
+| Shallot      |       **92** | Sweet/sulfur         | Dominance           |
+| Pumpkin seed |       **91** | Crunch/nutty         | Dryness             |
+| Garlic       |       **90** | Sulfur/depth         | Harshness           |
+| Hazelnut     |       **89** | Crunch/roast         | Richness            |
+| Tomato       |       **88** | Acid/umami           | Starch heaviness    |
+| Black pepper |       **87** | Heat/aroma           | Pungency            |
+| Parsley      |       **86** | Freshness            | Weak persistence    |
+| Lemon zest   |       **86** | Aroma                | Can become floral   |
+| Miso         |       **85** | Umami                | Salt/dominance      |
+| Chili        |       **84** | Heat                 | Masks bean          |
+| Apple        |       **82** | Sweet/acid/crunch    | Fruit dominance     |
+| Coffee       |       **78** | Roast/bitter         | Very high dominance |
+
+These numbers should be treated as **model hypotheses**, not measured scientific constants.
+
+That's an important distinction from the outputs you pasted: a sophisticated-looking numerical score isn't automatically empirical.
+
+---
+
+# 13 — THE REAL DISCOVERY ENGINE
+
+The system should search for **complementarity**, not simply compatibility.
+
+Define:
+
+[
+\boxed{
+\mathcal{S}(I)=
+\alpha C+
+\beta K+
+\gamma \Delta T+
+\delta \Delta A+
+\epsilon B-
+\lambda D
+}
+]
+
+where:
+
+* (C) = chemical compatibility
+* (K) = flavor compatibility
+* (\Delta T) = textural contrast
+* (\Delta A) = aromatic contrast/complementarity
+* (B) = balance improvement
+* (D) = dominance/conflict
+
+Then search not just individual ingredients, but **sets**:
+
+[
+\boxed{
+I^* =
+\arg\max_I
+\left[
+Q(I)
++
+\lambda V(I)
+------------
+
+\mu C(I)
+\right]
+}
+]
+
+where:
+
+* (Q) = predicted sensory quality
+* (V) = novelty
+* (C) = complexity/conflict
+
+This prevents the AI from producing:
+
+> bean + garlic + onion + cumin + chili + paprika + tomato + cilantro + lime + cheese + bacon + five spices...
+
+That's not optimization.
+
+That's **feature accumulation**.
+
+The engine should instead seek the **minimum number of ingredients capable of producing the maximum sensory dimensionality.**
+
+---
+
+# 14 — THE "HELL'S KITCHEN" PRINCIPLE
+
+The ultimate AI shouldn't ask:
+
+> **What goes with beans?**
+
+It should ask:
+
+> **What does the bean lack?**
+
+Then:
+
+> **Which physical or chemical mechanisms can supply those missing dimensions?**
+
+Then:
+
+> **Which ingredients implement those mechanisms most efficiently?**
+
+Then:
+
+> **Which combination creates the largest improvement while minimizing interference?**
+
+That gives us:
+
+[
+\boxed{
+\text{Ingredient}
+\rightarrow
+\text{Property}
+\rightarrow
+\text{Mechanism}
+\rightarrow
+\text{Sensory Effect}
+\rightarrow
+\text{System Interaction}
+}
+]
+
+rather than:
+
+[
+\text{Ingredient}
+\rightarrow
+\text{Recipe}
+]
+
+And that is the real Hell's Kitchen engine.
+
+---
+
+# 15 — THE FINAL TARGET
+
+For the black bean, I would make the AI search for this sensory trajectory:
+
+```text
+FIRST CONTACT
+     ↓
+aromatic lift
+     ↓
+brown/toasted aroma
+     ↓
+creamy bean
+     ↓
+deep umami
+     ↓
+nutty/crisp contrast
+     ↓
+acidic brightness
+     ↓
+clean aromatic finish
+```
+
+The ideal result isn't merely **"delicious beans."**
+
+It's:
+
+[
+\boxed{
+q_{bean}
+\overset{\Phi_1}{\longrightarrow}
+\text{aromatic expansion}
+\overset{\Phi_2}{\longrightarrow}
+\text{umami expansion}
+\overset{\Phi_3}{\longrightarrow}
+\text{textural expansion}
+\overset{\Phi_4}{\longrightarrow}
+\text{acidic resolution}
+}
+]
+
+### My first experimental prototype
+
+**Perfect black beans + browned mushroom + shallot + brown butter + lemon + parsley/chive + toasted pumpkin seed + black pepper + salt.**
+
+I would deliberately **not** add tomato, cumin, chili, cilantro, or bacon initially.
+
+Not because those ingredients are bad with beans—they're excellent—but because the first experiment should isolate a different flavor architecture.
+
+Then Hell's Kitchen can perform controlled substitutions:
+
+**brown butter → olive oil → sesame oil → duck fat**
+
+**mushroom → porcini → tomato → miso**
+
+**lemon → lime → sherry vinegar → orange**
+
+**pumpkin seed → hazelnut → almond → crispy garlic**
+
+and map the resulting state-space.
+
+That is where this becomes much more powerful than a recipe generator: **the AI starts discovering combinations that nobody explicitly taught it as recipes.**
