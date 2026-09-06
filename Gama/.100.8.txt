@@ -1,0 +1,42 @@
+Frame 214905: Packet, 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77})
+        Interface name: \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}
+        Interface description: Ethernet
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Aug 30, 2026 20:57:23.404177300 Hora estándar, América Central
+    UTC Arrival Time: Aug 31, 2026 02:57:23.404177300 UTC
+    Epoch Arrival Time: 1788145043.404177300
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 342.800 microseconds]
+    [Time delta from previous displayed frame: 6 minutes, 22.152995300 seconds]
+    [Time since reference or first frame: 33 minutes, 49.651658600 seconds]
+    Frame Number: 214905
+    Frame Length: 60 bytes (480 bits)
+    Capture Length: 60 bytes (480 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: de:96:80:76:9e:f0 (de:96:80:76:9e:f0), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: de:96:80:76:9e:f0 (de:96:80:76:9e:f0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    [Stream index: 15]
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: de:96:80:76:9e:f0 (de:96:80:76:9e:f0)
+    Sender IP address: 192.168.100.8
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.100.1

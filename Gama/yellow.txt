@@ -1,0 +1,80 @@
+Frame 359634: Packet, 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77})
+        Interface name: \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}
+        Interface description: Ethernet
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Aug 30, 2026 21:16:11.493250900 Hora estándar, América Central
+    UTC Arrival Time: Aug 31, 2026 03:16:11.493250900 UTC
+    Epoch Arrival Time: 1788146171.493250900
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 513.043600 milliseconds]
+    [Time delta from previous displayed frame: 513.043600 milliseconds]
+    [Time since reference or first frame: 52 minutes, 37.740732200 seconds]
+    Frame Number: 359634
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:nbns]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: SMB]
+    [Coloring Rule String: smb || nbss || nbns || netbios]
+Ethernet II, Src: Dell_da:e8:60 (48:4d:7e:da:e8:60), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Dell_da:e8:60 (48:4d:7e:da:e8:60)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 16]
+Internet Protocol Version 4, Src: 192.168.100.83, Dst: 192.168.100.255
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 78
+    Identification: 0x48c2 (18626)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.83
+    Destination Address: 192.168.100.255
+    [Stream index: 178]
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+    Source Port: 137
+    Destination Port: 137
+    Length: 58
+    Checksum: 0x1bd3 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1067]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (50 bytes)
+NetBIOS Name Service
+    Transaction ID: 0xf36d
+    Flags: 0x0110, Opcode: Name query, Recursion desired, Broadcast
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Name query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... ...1 .... = Broadcast: Broadcast packet
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        DESKTOP-6CKA4UN<1c>: type NB, class IN
+            Name: DESKTOP-6CKA4UN<1c> (Domain Controllers)
+            Type: NB (32)
+            Class: IN (1)

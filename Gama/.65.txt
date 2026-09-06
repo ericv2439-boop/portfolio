@@ -1,0 +1,75 @@
+Frame 2: Packet, 212 bytes on wire (1696 bits), 212 bytes captured (1696 bits) on interface \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77})
+        Interface name: \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}
+        Interface description: Ethernet
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Aug 30, 2026 20:23:35.386954000 Hora estándar, América Central
+    UTC Arrival Time: Aug 31, 2026 02:23:35.386954000 UTC
+    Epoch Arrival Time: 1788143015.386954000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 1.634435300 seconds]
+    [Time delta from previous displayed frame: 1.634435300 seconds]
+    [Time since reference or first frame: 1.634435300 seconds]
+    Frame Number: 2
+    Frame Length: 212 bytes (1696 bits)
+    Capture Length: 212 bytes (1696 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:ssdp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: GigaByteTech_dc:56:17 (e0:d5:5e:dc:56:17), Dst: IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+    Destination: IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: GigaByteTech_dc:56:17 (e0:d5:5e:dc:56:17)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 1]
+Internet Protocol Version 4, Src: 192.168.100.65, Dst: 239.255.255.250
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 198
+    Identification: 0xd6d3 (54995)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 1
+    Protocol: UDP (17)
+    Header Checksum: 0xcd6f [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.100.65
+    Destination Address: 239.255.255.250
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 64629, Dst Port: 1900
+    Source Port: 64629
+    Destination Port: 1900
+    Length: 178
+    Checksum: 0x87cc [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (170 bytes)
+Simple Service Discovery Protocol
+    M-SEARCH * HTTP/1.1\r\n
+        Request Method: M-SEARCH
+        Request URI: *
+        Request Version: HTTP/1.1
+    HOST: 239.255.255.250:1900\r\n
+    MAN: "ssdp:discover"\r\n
+    MX: 1\r\n
+    ST: urn:dial-multiscreen-org:service:dial:1\r\n
+    USER-AGENT: Chromium/126.0.6478.183 Windows\r\n
+    \r\n
+    [Full request URI: http://239.255.255.250:1900*]

@@ -1,0 +1,101 @@
+unsigned char bytes[] = {};
+
+Frame 359633: Packet, 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77})
+        Interface name: \Device\NPF_{4B5706BE-B9D8-4F4C-8CA3-F33635C94B77}
+        Interface description: Ethernet
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Aug 30, 2026 21:16:10.980207300 Hora estándar, América Central
+    UTC Arrival Time: Aug 31, 2026 03:16:10.980207300 UTC
+    Epoch Arrival Time: 1788146170.980207300
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 75.199000 milliseconds]
+    [Time delta from previous displayed frame: 75.199000 milliseconds]
+    [Time since reference or first frame: 52 minutes, 37.227688600 seconds]
+    Frame Number: 359633
+    Frame Length: 60 bytes (480 bits)
+    Capture Length: 60 bytes (480 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    Character encoding: ASCII (0)
+    [Coloring Rule Name: TCP RST]
+    [Coloring Rule String: tcp.flags.reset eq 1]
+Ethernet II, Src: HuaweiTechno_72:a3:71 (b0:76:1b:72:a3:71), Dst: Dell_da:e8:60 (48:4d:7e:da:e8:60)
+    Destination: Dell_da:e8:60 (48:4d:7e:da:e8:60)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HuaweiTechno_72:a3:71 (b0:76:1b:72:a3:71)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+    Padding: 000000000000
+Internet Protocol Version 4, Src: 20.161.205.129, Dst: 192.168.100.83
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xb8 (DSCP: EF, ECN: Not-ECT)
+        1011 10.. = Differentiated Services Codepoint: Expedited Forwarding (46)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 40
+    Identification: 0xbed2 (48850)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 249
+    Protocol: TCP (6)
+    Header Checksum: 0xbb26 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 20.161.205.129
+    Destination Address: 192.168.100.83
+    [Stream index: 135]
+Transmission Control Protocol, Src Port: 443, Dst Port: 51620, Seq: 12690, Ack: 6022, Len: 0
+    Source Port: 443
+    Destination Port: 51620
+    [Stream index: 152]
+    [Stream Packet Number: 29]
+    [Conversation completeness: Complete, WITH_DATA (47)]
+        ..1. .... = RST: Present
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: R·DASS]
+    [TCP Segment Len: 0]
+    Sequence Number: 12690    (relative sequence number)
+    Sequence Number (raw): 1258606065
+    [Next Sequence Number: 12690    (relative sequence number)]
+    Acknowledgment Number: 6022    (relative ack number)
+    Acknowledgment number (raw): 1232589128
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x014 (RST, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .1.. = Reset: Set
+            [Expert Info (Warning/Sequence): Connection reset (RST)]
+                [Connection reset (RST)]
+                [Severity level: Warning]
+                [Group: Sequence]
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A·R··]
+    Window: 0
+    [Calculated window size: 0]
+    [Window size scaling factor: 256]
+    Checksum: 0xa99c [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 2 minutes, 7.412260800 seconds]
+        [Time since previous frame in this TCP stream: 2 minutes, 6.685281800 seconds]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]

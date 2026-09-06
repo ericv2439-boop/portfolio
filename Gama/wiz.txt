@@ -1,0 +1,98 @@
+Yes — this larger sample makes the situation much clearer.
+
+### Your `.65` device is not getting ARP replies for these addresses
+
+For your machine:
+
+```text
+192.168.100.65
+MAC e0:d5:5e:dc:56:17
+```
+
+I see repeated requests for:
+
+| Target            | Requests | Reply visible? |
+| ----------------- | -------: | -------------- |
+| `192.168.100.5`   |     many | **No**         |
+| `192.168.100.17`  |     many | **No**         |
+| `192.168.100.91`  |     many | **No**         |
+| `192.168.100.182` |     many | **No**         |
+
+For example:
+
+```text
+GigaByteTech_dc:56:17 → Broadcast
+Who has 192.168.100.17? Tell 192.168.100.65
+```
+
+and then it tries again.
+
+Contrast that with `.83`:
+
+```text
+HuaweiTechno_72:a3:71 → Dell_da:e8:60
+Who has 192.168.100.83? Tell 192.168.100.1
+
+Dell_da:e8:60 → HuaweiTechno_72:a3:71
+192.168.100.83 is at 48:4d:7e:da:e8:60
+```
+
+That's a **normal successful ARP exchange**.
+
+### The really interesting part
+
+Your `.65` machine repeatedly asks for `.5`, `.17`, `.91`, and `.182`, but there is **no corresponding `is at` response in the data you've shown**.
+
+That means your computer is attempting to resolve those IPs to MAC addresses and apparently isn't learning them.
+
+However, this **doesn't mean those devices are necessarily present and refusing to respond**. If they don't exist, are asleep, are isolated, or are on another segment, you'd get essentially the same behavior.
+
+### You can verify this very cleanly
+
+Put this in Wireshark:
+
+```wireshark
+arp && arp.src.proto_ipv4 == 192.168.100.65
+```
+
+Then switch to the **Packet Details** pane and inspect the ARP requests.
+
+For specifically `.17`:
+
+```wireshark
+arp.dst.proto_ipv4 == 192.168.100.17
+```
+
+For `.5`:
+
+```wireshark
+arp.dst.proto_ipv4 == 192.168.100.5
+```
+
+For `.91`:
+
+```wireshark
+arp.dst.proto_ipv4 == 192.168.100.91
+```
+
+For `.182`:
+
+```wireshark
+arp.dst.proto_ipv4 == 192.168.100.182
+```
+
+If those filters show only:
+
+```text
+Who has X.X.X.X? Tell 192.168.100.65
+```
+
+with no:
+
+```text
+X.X.X.X is at XX:XX:XX:XX:XX:XX
+```
+
+then **your capture confirms the lack of ARP responses**.
+
+One other thing stands out: the `.65` requests aren't random one-off ARPs. They're occurring in **clusters and recurring over the ~46-minute capture**, which makes it worth identifying **what process on your Windows machine is trying to reach those IPs**. That's the next thing I'd investigate.
